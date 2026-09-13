@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Direct access to files
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Rewrite to index.html for SPA
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>
+
+# Cache headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access 1 hour"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType application/javascript "access 1 month"
+  ExpiresByType image/jpeg "access 1 month"
+  ExpiresByType image/png "access 1 month"
+</IfModule>

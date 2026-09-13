@@ -3,18 +3,8 @@
   publish = "output"
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/franquicias"
-  to = "/franchise.html"
-  status = 200
-
-[[redirects]]
-  from = "/contacto"
-  to = "/contact-form.html"
   status = 200
 
 [headers]
@@ -27,3 +17,6 @@
   [[headers.values]]
     key = "X-Frame-Options"
     value = "DENY"
+  [[headers.values]]
+    key = "Content-Security-Policy"
+    value = "default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';"
