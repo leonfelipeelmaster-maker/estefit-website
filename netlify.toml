@@ -2,8 +2,29 @@
   command = "echo 'Static site - no build needed'"
   publish = "output"
 
+# Serve franchise.html for /franchise
 [[redirects]]
-  from = "/*"
+  from = "/franchise"
+  to = "/franchise.html"
+  status = 200
+  force = true
+
+# Serve contact-form.html for /contact or /contacto
+[[redirects]]
+  from = "/contact"
+  to = "/contact-form.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contacto"
+  to = "/contact-form.html"
+  status = 200
+  force = true
+
+# Default to index.html only for root
+[[redirects]]
+  from = "/"
   to = "/index.html"
   status = 200
 
@@ -17,6 +38,3 @@
   [[headers.values]]
     key = "X-Frame-Options"
     value = "DENY"
-  [[headers.values]]
-    key = "Content-Security-Policy"
-    value = "default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';"
