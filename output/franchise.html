@@ -4,30 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
-    
-    <!-- SEO Meta Tags -->
-    <title>{{seo.contact_meta_title}}</title>
+    <title>ESTEFIT Franquicias | Oportunidad de Negocio</title>
     <meta name="description" content="Barras de proteína, café con proteína y bebidas energéticas diseñadas para atletas, ciclistas y gimnasios. Envíos a toda México.">
     <link rel="canonical" href="https://estefit.store">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta property="og:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta name="twitter:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Performance -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Structured Data -->
     <script type="application/ld+json">[object Object]</script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -40,6 +28,7 @@
             --transition-speed: 0.3s;
             --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
             --shadow-md: 0 8px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 12px 24px rgba(0,0,0,0.15);
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -60,86 +49,114 @@
             align-items: center;
         }
         
-        .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
-        .logo span { color: var(--color-secondary); }
+        header h1 { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
+        header h1 span { color: var(--color-secondary); }
         header nav a { color: var(--color-secondary); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: opacity var(--transition-speed); }
         header nav a:hover { opacity: 0.8; }
         
-        .form-section { padding: 4rem 1.5rem; max-width: 600px; margin: 0 auto; }
-        .form-section h1 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: var(--color-primary); }
-        .form-section > p { text-align: center; margin-bottom: 2rem; color: #555; }
-        
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-primary); }
-        
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group textarea {
-            width: 100%;
-            padding: 0.9rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-background);
+            padding: 5rem 1.5rem;
+            text-align: center;
         }
         
-        .form-group input:focus,
-        .form-group textarea:focus { 
-            outline: none; 
-            border-color: var(--color-secondary);
-            box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.2);
-        }
-        .form-group textarea { min-height: 150px; resize: vertical; }
-        
-        .checkbox-group { display: flex; align-items: center; gap: 0.8rem; }
-        .checkbox-group input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--color-secondary); cursor: pointer; }
-        .checkbox-group label { margin-bottom: 0; cursor: pointer; font-weight: 400; }
+        .hero h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-secondary); text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
         
         .btn {
-            display: block;
-            width: 100%;
+            display: inline-block;
             background-color: var(--color-secondary);
             color: var(--color-primary);
-            padding: 1rem;
+            padding: 0.9rem 2.2rem;
+            text-decoration: none;
             font-weight: 700;
             border-radius: 4px;
             text-transform: uppercase;
+            transition: transform var(--transition-speed), background-color var(--transition-speed), box-shadow var(--transition-speed);
             border: none;
             cursor: pointer;
-            font-size: 1rem;
-            transition: background-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
             box-shadow: var(--shadow-sm);
         }
         
         .btn:hover { 
-            background-color: #e67e00; 
             transform: translateY(-3px); 
+            background-color: #e67e00; 
             box-shadow: var(--shadow-md);
         }
         
-        .success-message {
-            display: none;
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
+        .section { padding: 4rem 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .section h3 { text-align: center; font-size: 1.8rem; margin-bottom: 2.5rem; color: var(--color-primary); }
+        
+        .benefits-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        
+        .benefit-card {
+            background: var(--color-background);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
             padding: 1.5rem;
-            border-radius: 4px;
             text-align: center;
-            margin-bottom: 2rem;
-            font-weight: 600;
-        }
-
-        .error-message {
-            color: #d32f2f;
-            font-size: 0.85rem;
-            margin-top: 0.4rem;
-            display: none;
-            font-weight: 600;
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            box-shadow: var(--shadow-sm);
         }
         
-        footer { background-color: var(--color-primary); color: var(--color-background); padding: 3rem 1.5rem; text-align: center; margin-top: 3rem; }
+        .benefit-card:hover { 
+            box-shadow: var(--shadow-md); 
+            transform: translateY(-5px);
+        }
+        .benefit-card h4 { color: var(--color-secondary); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        
+        .requirements-list { list-style: none; max-width: 600px; margin: 0 auto; }
+        .requirements-list li { padding: 1rem; border-bottom: 1px solid #e0e0e0; position: relative; padding-left: 2rem; }
+        .requirements-list li::before { content: "✓"; color: var(--color-secondary); font-weight: 900; position: absolute; left: 0; }
+        
+        .process-steps { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+        }
+        
+        .step:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+        
+        .step-number {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        
+        .step h4 { margin-bottom: 0.5rem; color: var(--color-primary); }
+        
+        .faq-item { margin-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 1.5rem; }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .faq-item p { color: #555; }
+        
+        .cta-section { 
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-background); 
+            text-align: center; 
+            padding: 5rem 1.5rem; 
+        }
+        .cta-section h3 { color: var(--color-background); text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        
+        footer { background-color: var(--color-primary); color: var(--color-background); padding: 3rem 1.5rem; text-align: center; }
         .footer-links { margin-bottom: 1.5rem; }
         .footer-links a { color: var(--color-secondary); text-decoration: none; margin: 0 1rem; font-weight: 600; transition: opacity var(--transition-speed); }
         .footer-links a:hover { opacity: 0.8; text-decoration: underline; }
@@ -150,58 +167,96 @@
         .copyright { font-size: 0.8rem; opacity: 0.7; border-top: 1px solid #333; padding-top: 1.5rem; margin-top: 1.5rem; }
         
         @media (min-width: 768px) {
-            .form-section { padding: 5rem 2rem; }
-            .form-section h1 { font-size: 2.5rem; }
+            .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+            .process-steps { grid-template-columns: repeat(3, 1fr); }
+            .hero { padding: 6rem 2rem; }
+            .hero h2 { font-size: 2.8rem; }
+            .section { padding: 5rem 2rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><span>ESTEFIT</span></div>
+        <h1><span>ESTEFIT</span></h1>
         <nav>
             <a href="index.html">Inicio</a>
         </nav>
     </header>
 
-    <section class="form-section">
-        <div id="success-message" class="success-message">
-            ¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos muy pronto.
+    <section class="hero">
+        <h2>Únete al Movimiento ESTEFIT</h2>
+        <p>Asóciate con una marca líder en nutrición deportiva y lleva productos premium de alto rendimiento a tu comunidad.</p>
+        <a href="contact-form.html" class="btn">Inicia tu Solicitud</a>
+    </section>
+
+    <section class="section">
+        <h3>¿Por qué asociarte con nosotros?</h3>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h4>Modelo de Negocio Comprobado</h4>
+                <p>Aprovecha nuestro reconocimiento de marca y un manual operativo diseñado para un retorno de inversión rápido.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>Capacitación Integral</h4>
+                <p>Recibe capacitación de principio a fin para ti y tu personal en conocimiento del producto, ventas y alianzas con gimnasios.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>Soporte de Marketing</h4>
+                <p>Accede a campañas nacionales, recursos digitales localizados y apoyo para tu gran inauguración.</p>
+            </div>
         </div>
+    </section>
 
-        <h1>Contáctanos</h1>
-        <p>¿Tienes preguntas sobre nuestros productos o franquicias? Nos encantaría saber de ti.</p>
+    <section class="section" style="background-color: #f9f9f9;">
+        <h3>Requisitos de Franquicia</h3>
+        <ul class="requirements-list">
+            <li>Capital líquido mínimo de $3,000,000 MXN</li>
+            <li>Gran pasión por el fitness, la nutrición y el bienestar comunitario</li>
+            <li>Disposición para cumplir con los estándares de marca y lineamientos operativos de ESTEFIT</li>
+        </ul>
+    </section>
 
-        <form id="contact-form" action="https://estefit.store/api/enviar-contacto" method="POST">
-            <div class="form-group">
-                <label for="name">Nombre Completo</label>
-                <input type="text" id="name" name="name" placeholder="Juan Pérez">
-                <div class="error-message" id="name-error">El nombre es requerido</div>
+    <section class="section">
+        <h3>El Camino a tu Franquicia</h3>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Solicita</h4>
+                <p>Envía tu consulta inicial y antecedentes financieros a través de nuestro formulario de contacto.</p>
             </div>
-
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="juan@ejemplo.com">
-                <div class="error-message" id="email-error">Email inválido</div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Descubre</h4>
+                <p>Reúnete con nuestro equipo de desarrollo de franquicias para conocer a detalle la marca y las expectativas.</p>
             </div>
-
-            <div class="form-group">
-                <label for="phone">Número de Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="+52 (55) 1234-5678">
-                <div class="error-message" id="phone-error">Teléfono inválido</div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Lanza</h4>
+                <p>Firma el contrato, completa la capacitación y abre tus puertas con el respaldo total de ESTEFIT.</p>
             </div>
+        </div>
+    </section>
 
-            <div class="form-group checkbox-group">
-                <input type="checkbox" id="franchise_interest" name="franchise_interest" value="yes">
-                <label for="franchise_interest">Me interesa conocer más sobre las oportunidades de franquicia de ESTEFIT</label>
-            </div>
+    <section class="section">
+        <h3>Preguntas Frecuentes</h3>
+        <div class="faq-item">
+            <h4>¿Cuál es la inversión total requerida?</h4>
+            <p>La inversión inicial total oscila entre $5,000,000 y $8,000,000 MXN, dependiendo de la ubicación y el tamaño de las instalaciones.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Necesito experiencia previa en la industria del fitness?</h4>
+            <p>No, no se requiere experiencia previa. Nuestro programa de capacitación integral te equipará con todo lo necesario para triunfar.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Cuánto tiempo toma abrir una sucursal?</h4>
+            <p>Desde la firma del contrato hasta la gran inauguración, el tiempo típico es de 6 a 9 meses.</p>
+        </div>
+    </section>
 
-            <div class="form-group">
-                <label for="message">Tu Mensaje</label>
-                <textarea id="message" name="message" placeholder="¿En qué te podemos ayudar?"></textarea>
-            </div>
-
-            <button type="submit" class="btn">Enviar Mensaje</button>
-        </form>
+    <section class="cta-section">
+        <h3>¿Listo para Construir tu Futuro?</h3>
+        <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Da el primer paso para ser dueño de una franquicia exitosa de ESTEFIT. Nuestro equipo está listo para responder tus preguntas.</p>
+        <a href="contact-form.html" class="btn">Contactar al Equipo de Franquicias</a>
     </section>
 
     <footer>
@@ -227,65 +282,5 @@
             © 2026 ESTEFIT Nutrición. Todos los derechos reservados.
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contact-form');
-            const successMessage = document.getElementById('success-message');
-            
-            const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('email');
-            const phoneInput = document.getElementById('phone');
-            
-            const nameError = document.getElementById('name-error');
-            const emailError = document.getElementById('email-error');
-            const phoneError = document.getElementById('phone-error');
-
-            function validateEmail(email) {
-                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-            }
-
-            function validatePhone(phone) {
-                return /^[\+]?[0-9\s\-\(\)]{7,20}$/.test(phone);
-            }
-
-            if (form) {
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    let isValid = true;
-
-                    // Reset errors
-                    nameError.style.display = 'none';
-                    emailError.style.display = 'none';
-                    phoneError.style.display = 'none';
-
-                    // Validate Name
-                    if (!nameInput.value.trim()) {
-                        nameError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // Validate Email
-                    if (!validateEmail(emailInput.value)) {
-                        emailError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // Validate Phone
-                    if (!validatePhone(phoneInput.value)) {
-                        phoneError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // If all valid, show success
-                    if (isValid) {
-                        form.style.display = 'none';
-                        successMessage.style.display = 'block';
-                        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>
