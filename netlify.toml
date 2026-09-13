@@ -1,0 +1,29 @@
+[build]
+  command = "echo 'Static site - no build needed'"
+  publish = "output"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/franquicias"
+  to = "/franchise.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacto"
+  to = "/contact-form.html"
+  status = 200
+
+[headers]
+  [[headers.values]]
+    key = "Cache-Control"
+    value = "max-age=3600"
+  [[headers.values]]
+    key = "X-Content-Type-Options"
+    value = "nosniff"
+  [[headers.values]]
+    key = "X-Frame-Options"
+    value = "DENY"
