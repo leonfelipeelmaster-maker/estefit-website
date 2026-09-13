@@ -59,7 +59,7 @@ function validateConfig(config) {
     if (!isValidPhone(config.contact.phone)) throw new Error(`Teléfono inválido: ${config.contact.phone}`);
     
     if (!isValidUrl(config.hero.image)) throw new Error(`URL de imagen del hero inválida: ${config.hero.image}`);
-    if (!isValidUrl(config.hero.cta_link)) throw new Error(`Link CTA del hero inválido: ${config.hero.cta_link}`);
+    if (!isValidUrl(config.hero.cta_link) && !config.hero.cta_link.startsWith('#')) throw new Error(`Link CTA del hero inválido: ${config.hero.cta_link}`);
     
     if (!config.products || !Array.isArray(config.products.items)) {
         throw new Error('Los elementos de productos deben ser un array');
