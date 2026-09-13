@@ -3,31 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
-    
-    <!-- SEO Meta Tags -->
-    <title>{{seo.contact_meta_title}}</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';">
+    <title>ESTEFIT | Nutrición Premium para Atletas y Gimnasios</title>
     <meta name="description" content="Barras de proteína, café con proteína y bebidas energéticas diseñadas para atletas, ciclistas y gimnasios. Envíos a toda México.">
     <link rel="canonical" href="https://estefit.store">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta property="og:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta name="twitter:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Performance -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Structured Data -->
     <script type="application/ld+json">[object Object]</script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -40,6 +29,7 @@
             --transition-speed: 0.3s;
             --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
             --shadow-md: 0 8px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 12px 24px rgba(0,0,0,0.15);
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -60,148 +50,205 @@
             align-items: center;
         }
         
-        .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
-        .logo span { color: var(--color-secondary); }
+        header h1 { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
+        header h1 span { color: var(--color-secondary); }
         header nav a { color: var(--color-secondary); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: opacity var(--transition-speed); }
         header nav a:hover { opacity: 0.8; }
         
-        .form-section { padding: 4rem 1.5rem; max-width: 600px; margin: 0 auto; }
-        .form-section h1 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: var(--color-primary); }
-        .form-section > p { text-align: center; margin-bottom: 2rem; color: #555; }
-        
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-primary); }
-        
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group textarea {
-            width: 100%;
-            padding: 0.9rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-background);
+            padding: 5rem 1.5rem;
+            text-align: center;
         }
         
-        .form-group input:focus,
-        .form-group textarea:focus { 
-            outline: none; 
-            border-color: var(--color-secondary);
-            box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.2);
-        }
-        .form-group textarea { min-height: 150px; resize: vertical; }
-        
-        .checkbox-group { display: flex; align-items: center; gap: 0.8rem; }
-        .checkbox-group input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--color-secondary); cursor: pointer; }
-        .checkbox-group label { margin-bottom: 0; cursor: pointer; font-weight: 400; }
+        .hero h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-secondary); text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
         
         .btn {
-            display: block;
-            width: 100%;
+            display: inline-block;
             background-color: var(--color-secondary);
             color: var(--color-primary);
-            padding: 1rem;
+            padding: 0.9rem 2.2rem;
+            text-decoration: none;
             font-weight: 700;
             border-radius: 4px;
             text-transform: uppercase;
+            transition: transform var(--transition-speed), background-color var(--transition-speed), box-shadow var(--transition-speed);
             border: none;
             cursor: pointer;
-            font-size: 1rem;
-            transition: background-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
             box-shadow: var(--shadow-sm);
         }
         
         .btn:hover { 
-            background-color: #e67e00; 
             transform: translateY(-3px); 
+            background-color: #e67e00; 
             box-shadow: var(--shadow-md);
         }
         
-        .success-message {
-            display: none;
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-            padding: 1.5rem;
-            border-radius: 4px;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: 600;
-        }
-
-        .error-message {
-            color: #d32f2f;
-            font-size: 0.85rem;
-            margin-top: 0.4rem;
-            display: none;
-            font-weight: 600;
+        .products-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .products-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; color: var(--color-primary); }
+        
+        .products-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        
+        .product-card {
+            background: var(--color-background);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
         }
         
-        footer { background-color: var(--color-primary); color: var(--color-background); padding: 3rem 1.5rem; text-align: center; margin-top: 3rem; }
+        .product-card:hover { 
+            box-shadow: var(--shadow-lg); 
+            transform: translateY(-5px);
+        }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; }
+        
+        .product-info { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-info h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--color-primary); }
+        .product-info p { font-size: 0.95rem; color: #555; margin-bottom: 1rem; flex-grow: 1; }
+        .product-info .price { font-size: 1.3rem; font-weight: 700; color: var(--color-secondary); margin-bottom: 1.5rem; display: block; }
+        
+        footer { background-color: var(--color-primary); color: var(--color-background); padding: 3rem 1.5rem; text-align: center; }
         .footer-links { margin-bottom: 1.5rem; }
         .footer-links a { color: var(--color-secondary); text-decoration: none; margin: 0 1rem; font-weight: 600; transition: opacity var(--transition-speed); }
         .footer-links a:hover { opacity: 0.8; text-decoration: underline; }
+        
         .social-links { margin-bottom: 1.5rem; }
         .social-links a { color: var(--color-background); text-decoration: none; margin: 0 0.8rem; font-size: 0.9rem; transition: color var(--transition-speed); }
         .social-links a:hover { color: var(--color-secondary); }
+        
         .contact-info { margin-bottom: 1.5rem; font-size: 0.9rem; opacity: 0.9; }
         .copyright { font-size: 0.8rem; opacity: 0.7; border-top: 1px solid #333; padding-top: 1.5rem; margin-top: 1.5rem; }
         
         @media (min-width: 768px) {
-            .form-section { padding: 5rem 2rem; }
-            .form-section h1 { font-size: 2.5rem; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero { padding: 6rem 2rem; }
+            .hero h2 { font-size: 2.8rem; }
+            .products-section { padding: 5rem 2rem; }
+        }
+        
+        @media (min-width: 1024px) {
+            .products-grid { grid-template-columns: repeat(3, 1fr); }
+            header { padding: 1rem 3rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><span>ESTEFIT</span></div>
+        <h1><span>ESTEFIT</span></h1>
         <nav>
-            <a href="index.html">Inicio</a>
+            <a href="franchise.html">Franquicias</a>
         </nav>
     </header>
 
-    <section class="form-section">
-        <div id="success-message" class="success-message">
-            ¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos muy pronto.
+    <section class="hero">
+        <h2>Potencia tu Rendimiento</h2>
+        <p>Barras de proteína, café bebible con proteína y bebidas proteicas en lata diseñadas para gimnasios, atletas y ciclistas.</p>
+        <a href="https://estefit.store/tienda/destacado" class="btn">Ver Producto Destacado</a>
+    </section>
+
+    <section class="products-section">
+        <h2>Nuestra Nutrición Premium</h2>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622484211148-7328a2c8a739?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT chocolate y cacahuate" loading="lazy">
+                <div class="product-info">
+                    <h3>Barra de Proteína ESTEFIT - Chocolate y Cacahuate</h3>
+                    <p>Chocolate intenso y cacahuates crujientes con 20g de proteína de suero premium.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT frutos rojos" loading="lazy">
+                <div class="product-info">
+                    <h3>Barra de Proteína ESTEFIT - Explosión de Frutos Rojos</h3>
+                    <p>Sabor a frutos rojos mixtos con 18g de proteína y sin azúcar añadida para energía limpia.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT avena crujiente" loading="lazy">
+                <div class="product-info">
+                    <h3>Barra de Proteína ESTEFIT - Avena Crujiente</h3>
+                    <p>Avena y miel con 15g de proteína vegetal para una resistencia sostenida.</p>
+                    <span class="price">$69.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Moca Boost con proteína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Moca Boost</h3>
+                    <p>Café cold brew infusionado con 25g de proteína de suero para el mejor impulso matutino.</p>
+                    <span class="price">$99.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Latte vainilla con proteína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Latte de Vainilla</h3>
+                    <p>Latte suave de vainilla con 20g de proteína, perfecto para el enfoque pre-entreno.</p>
+                    <span class="price">$99.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Cold Brew Extremo alta cafeína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Cold Brew Extremo</h3>
+                    <p>Cold brew con cafeína extra y 30g de proteína diseñado para atletas de élite.</p>
+                    <span class="price">$109.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida proteica en lata ESTEFIT frutos rojos post-entreno" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Recuperación de Frutos Rojos</h3>
+                    <p>Bebida proteica post-entreno con BCAAs y jugo real de frutos rojos.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida proteica ESTEFIT hidratación tropical ciclistas" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Hidratación Tropical</h3>
+                    <p>Mezcla de agua de coco y proteína optimizada para ciclistas y atletas de resistencia.</p>
+                    <span class="price">$89.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida energética ESTEFIT cítrica naranja limón electrolitos" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Energía Cítrica</h3>
+                    <p>Sabor cítrico de naranja y limón con 22g de proteína y electrolitos esenciales.</p>
+                    <span class="price">$89.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
         </div>
-
-        <h1>Contáctanos</h1>
-        <p>¿Tienes preguntas sobre nuestros productos o franquicias? Nos encantaría saber de ti.</p>
-
-        <form id="contact-form" action="https://estefit.store/api/enviar-contacto" method="POST">
-            <div class="form-group">
-                <label for="name">Nombre Completo</label>
-                <input type="text" id="name" name="name" placeholder="Juan Pérez">
-                <div class="error-message" id="name-error">El nombre es requerido</div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="juan@ejemplo.com">
-                <div class="error-message" id="email-error">Email inválido</div>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Número de Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="+52 (55) 1234-5678">
-                <div class="error-message" id="phone-error">Teléfono inválido</div>
-            </div>
-
-            <div class="form-group checkbox-group">
-                <input type="checkbox" id="franchise_interest" name="franchise_interest" value="yes">
-                <label for="franchise_interest">Me interesa conocer más sobre las oportunidades de franquicia de ESTEFIT</label>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Tu Mensaje</label>
-                <textarea id="message" name="message" placeholder="¿En qué te podemos ayudar?"></textarea>
-            </div>
-
-            <button type="submit" class="btn">Enviar Mensaje</button>
-        </form>
     </section>
 
     <footer>
@@ -227,65 +274,5 @@
             © 2026 ESTEFIT Nutrición. Todos los derechos reservados.
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contact-form');
-            const successMessage = document.getElementById('success-message');
-            
-            const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('email');
-            const phoneInput = document.getElementById('phone');
-            
-            const nameError = document.getElementById('name-error');
-            const emailError = document.getElementById('email-error');
-            const phoneError = document.getElementById('phone-error');
-
-            function validateEmail(email) {
-                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-            }
-
-            function validatePhone(phone) {
-                return /^[\+]?[0-9\s\-\(\)]{7,20}$/.test(phone);
-            }
-
-            if (form) {
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    let isValid = true;
-
-                    // Reset errors
-                    nameError.style.display = 'none';
-                    emailError.style.display = 'none';
-                    phoneError.style.display = 'none';
-
-                    // Validate Name
-                    if (!nameInput.value.trim()) {
-                        nameError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // Validate Email
-                    if (!validateEmail(emailInput.value)) {
-                        emailError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // Validate Phone
-                    if (!validatePhone(phoneInput.value)) {
-                        phoneError.style.display = 'block';
-                        isValid = false;
-                    }
-
-                    // If all valid, show success
-                    if (isValid) {
-                        form.style.display = 'none';
-                        successMessage.style.display = 'block';
-                        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>

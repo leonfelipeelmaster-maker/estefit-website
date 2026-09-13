@@ -4,30 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
-    
-    <!-- SEO Meta Tags -->
-    <title>{{seo.contact_meta_title}}</title>
+    <title>Contacto ESTEFIT | Consultas y Franquicias</title>
     <meta name="description" content="Barras de proteína, café con proteína y bebidas energéticas diseñadas para atletas, ciclistas y gimnasios. Envíos a toda México.">
     <link rel="canonical" href="https://estefit.store">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta property="og:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ESTEFIT - Combustible para tu Rendimiento">
     <meta name="twitter:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Performance -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-    
-    <!-- Structured Data -->
     <script type="application/ld+json">[object Object]</script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -60,13 +48,13 @@
             align-items: center;
         }
         
-        .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
-        .logo span { color: var(--color-secondary); }
+        header h1 { font-weight: 900; font-size: 1.5rem; letter-spacing: 2px; }
+        header h1 span { color: var(--color-secondary); }
         header nav a { color: var(--color-secondary); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: opacity var(--transition-speed); }
         header nav a:hover { opacity: 0.8; }
         
         .form-section { padding: 4rem 1.5rem; max-width: 600px; margin: 0 auto; }
-        .form-section h1 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: var(--color-primary); }
+        .form-section h2 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: var(--color-primary); }
         .form-section > p { text-align: center; margin-bottom: 2rem; color: #555; }
         
         .form-group { margin-bottom: 1.5rem; }
@@ -151,13 +139,13 @@
         
         @media (min-width: 768px) {
             .form-section { padding: 5rem 2rem; }
-            .form-section h1 { font-size: 2.5rem; }
+            .form-section h2 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><span>ESTEFIT</span></div>
+        <h1><span>ESTEFIT</span></h1>
         <nav>
             <a href="index.html">Inicio</a>
         </nav>
@@ -168,7 +156,7 @@
             ¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos muy pronto.
         </div>
 
-        <h1>Contáctanos</h1>
+        <h2>Contáctanos</h2>
         <p>¿Tienes preguntas sobre nuestros productos o franquicias? Nos encantaría saber de ti.</p>
 
         <form id="contact-form" action="https://estefit.store/api/enviar-contacto" method="POST">
