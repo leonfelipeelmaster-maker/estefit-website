@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{brand.name}} | Nutrición Premium para tu Estilo Activo</title>
+    <title>Estefit Wellness | Nutrición Premium para tu Estilo Activo</title>
     <meta name="description" content="Descubre nuestro catálogo de barras de proteína premium importadas de EE.UU. y Canadá. Sabor que disfrutas, proteína que te impulsa.">
-    <meta property="og:title" content="{{brand.name}} - Sabor que disfrutas. Proteína que te impulsa.">
+    <meta property="og:title" content="Estefit Wellness - Sabor que disfrutas. Proteína que te impulsa.">
     <meta property="og:description" content="Productos de nutrición y bienestar para atletas, gimnasios y estilo de vida activo.">
-    <meta property="og:image" content="{{hero.image}}">
+    <meta property="og:image" content="https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://estefit.store">
@@ -15,19 +15,19 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "{{brand.name}}",
+      "name": "Estefit Wellness",
       "description": "Marca de nutrición y bienestar con productos premium importados de EE.UU. y Canadá",
       "url": "https://estefit.store",
-      "logo": "{{brand.logo}}",
-      "image": "{{hero.image}}",
-      "telephone": "{{contact.phone}}",
-      "email": "{{contact.email}}",
+      "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-estefit.png",
+      "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg",
+      "telephone": "+52-555-123-4567",
+      "email": "contacto@estefit.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "{{contact.address}}",
+        "streetAddress": "Ciudad de México, México",
         "addressCountry": "MX"
       },
-      "sameAs": ["{{brand.instagram}}", "{{brand.tiktok}}"]
+      "sameAs": ["https://instagram.com/este_fit92", "https://tiktok.com/@estefit_92"]
     }
     </script>
     <style>
@@ -49,7 +49,7 @@
         nav a { color: white; font-weight: 500; transition: color 0.3s; }
         nav a:hover { color: var(--secondary); }
 
-        .hero { position: relative; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('{{hero.image}}') center/cover no-repeat; }
+        .hero { position: relative; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg') center/cover no-repeat; }
         .hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay); }
         .hero-content { position: relative; z-index: 1; padding: 2rem; max-width: 800px; }
         .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--secondary); }
@@ -100,7 +100,7 @@
 </head>
 <body>
     <nav>
-        <img src="{{brand.logo}}" alt="Logo {{brand.name}}" loading="lazy">
+        <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-estefit.png" alt="Logo Estefit Wellness" loading="lazy">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#productos">Productos</a></li>
@@ -112,9 +112,9 @@
     <header class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>{{hero.title}}</h1>
-            <p>{{hero.subtitle}}</p>
-            <a href="{{hero.cta_link}}" class="cta-btn">{{hero.cta_text}}</a>
+            <h1>Sabor que disfrutas</h1>
+            <p>Proteína de calidad para impulsar tu transformación</p>
+            <a href="https://leonfelipeelmaster-maker.github.io/estefit-website/index.html#productos" class="cta-btn">Ver Catálogo</a>
         </div>
     </header>
 
@@ -123,11 +123,11 @@
         <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
-                <img src="{{product_1.image}}" alt="{{product_1.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-1-power-crunch-protein-bars.jpg" alt="Power Crunch Protein Bars" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_1.name}}</h3>
-                    <p class="product-short-desc">{{product_1.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_1.name}}">Ver más detalles ▼</button>
+                    <h3>Power Crunch Protein Bars</h3>
+                    <p class="product-short-desc">Barras de proteína con textura de wafer crujiente. 12-14g de proteína, bajo en azúcar (4-8g). Whey protein hidrolizada de alto grado. Sabores: Cookies &amp; Cream, Peanut Butter, Triple Chocolate, Vanilla, Strawberry, Red Velvet, Salted Caramel y más.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de Power Crunch Protein Bars">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -138,17 +138,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Textura de wafer crujiente con proteína de alto grado para tu recuperación diaria.</p>
                     </div>
-                    <div class="product-price">{{product_1.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 2 -->
             <div class="product-card">
-                <img src="{{product_2.image}}" alt="{{product_2.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-2-barebells-original.jpg" alt="Barebells Original" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_2.name}}</h3>
-                    <p class="product-short-desc">{{product_2.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_2.name}}">Ver más detalles ▼</button>
+                    <h3>Barebells Original</h3>
+                    <p class="product-short-desc">20g de proteína por barra. Sin azúcar añadida. Textura con capas, relleno y cobertura de chocolate. Mezcla de caseinato de calcio, whey isolate y whey concentrate. Sabores: Cookies &amp; Cream, Chocolate Dough, Peanut Butter, Caramel, Birthday Cake, Mint Chocolate y más.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de Barebells Original">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -159,17 +159,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Textura indulgente con capas y cobertura de chocolate, sin azúcar añadida.</p>
                     </div>
-                    <div class="product-price">{{product_2.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 3 -->
             <div class="product-card">
-                <img src="{{product_3.image}}" alt="{{product_3.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-3-clif-builders-protein.jpg" alt="CLIF BUILDERS Protein" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_3.name}}</h3>
-                    <p class="product-short-desc">{{product_3.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_3.name}}">Ver más detalles ▼</button>
+                    <h3>CLIF BUILDERS Protein</h3>
+                    <p class="product-short-desc">Barra plant-based con 20g de proteína. Sin gluten, Non-GMO, sin endulzantes artificiales. Sabores: Chocolate, Chocolatey Peanut Butter, Vanilla Almond, Cookies N Creme, Chocolate Chip Cookie Dough y más.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de CLIF BUILDERS Protein">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -180,17 +180,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>100% plant-based, sin gluten y sin endulzantes artificiales.</p>
                     </div>
-                    <div class="product-price">{{product_3.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 4 -->
             <div class="product-card">
-                <img src="{{product_4.image}}" alt="{{product_4.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-4-clif-builders-oreo.jpg" alt="CLIF BUILDERS OREO" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_4.name}}</h3>
-                    <p class="product-short-desc">{{product_4.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_4.name}}">Ver más detalles ▼</button>
+                    <h3>CLIF BUILDERS OREO</h3>
+                    <p class="product-short-desc">Colaboración con OREO. 20g de proteína, plant-based. Non-GMO, bajo índice glucémico, sin gluten. Versión White Fudge OREO disponible.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de CLIF BUILDERS OREO">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -201,17 +201,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Colaboración exclusiva con OREO, bajo índice glucémico y apto para veganos.</p>
                     </div>
-                    <div class="product-price">{{product_4.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 5 -->
             <div class="product-card">
-                <img src="{{product_5.image}}" alt="{{product_5.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-5-pure-protein-variedad.jpg" alt="Pure Protein Variedad" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_5.name}}</h3>
-                    <p class="product-short-desc">{{product_5.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_5.name}}">Ver más detalles ▼</button>
+                    <h3>Pure Protein Variedad</h3>
+                    <p class="product-short-desc">Alto contenido de proteína, bajo en azúcar. Sabores: Chocolate Deluxe, Peanut Butter, Caramel, Cookies &amp; Cream, Mint Chocolate, Birthday Cake y más. Cookies &amp; Cream: 20g proteína, 5g azúcar.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de Pure Protein Variedad">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -222,17 +222,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Gran variedad de sabores deliciosos con alto contenido proteico y bajo en azúcar.</p>
                     </div>
-                    <div class="product-price">{{product_5.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 6 -->
             <div class="product-card">
-                <img src="{{product_6.image}}" alt="{{product_6.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-6-pure-protein-cocoa-peanuts.jpg" alt="Pure Protein Cocoa Peanuts" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_6.name}}</h3>
-                    <p class="product-short-desc">{{product_6.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_6.name}}">Ver más detalles ▼</button>
+                    <h3>Pure Protein Cocoa Peanuts</h3>
+                    <p class="product-short-desc">Combinación de chocolate, cacahuate y caramelo. 20g de proteína. Formulación premium con cobertura chocolate.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de Pure Protein Cocoa Peanuts">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -243,17 +243,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Combinación premium de chocolate, cacahuate y caramelo con cobertura real.</p>
                     </div>
-                    <div class="product-price">{{product_6.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 7 -->
             <div class="product-card">
-                <img src="{{product_7.image}}" alt="{{product_7.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-7-gatorade-recovery-protein-bar.jpg" alt="Gatorade Recovery Protein Bar" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_7.name}}</h3>
-                    <p class="product-short-desc">{{product_7.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_7.name}}">Ver más detalles ▼</button>
+                    <h3>Gatorade Recovery Protein Bar</h3>
+                    <p class="product-short-desc">Diseñada para recuperación post-entrenamiento. 20g proteína + carbohidratos. Whey protein de alta calidad. Peso: 80g. Sabores: Peanut Butter Chocolate, Chocolate Chip, Chocolate Caramel, Cookies &amp; Crème, Mint Chocolate Crunch.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de Gatorade Recovery Protein Bar">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -264,17 +264,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Fórmula específica para recuperación post-entrenamiento con carbohidratos y proteína.</p>
                     </div>
-                    <div class="product-price">{{product_7.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 8 -->
             <div class="product-card">
-                <img src="{{product_8.image}}" alt="{{product_8.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-8-one-reese&#039;s-peanut-butter.jpg" alt="ONE REESE&#039;S Peanut Butter" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_8.name}}</h3>
-                    <p class="product-short-desc">{{product_8.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_8.name}}">Ver más detalles ▼</button>
+                    <h3>ONE REESE&#039;S Peanut Butter</h3>
+                    <p class="product-short-desc">Colaboración con REESE&#039;S. 18g proteína, 3g azúcar. 250 calorías. Sabor chocolate + crema de cacahuate. Sin gluten, Kosher. Peso: 60g.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de ONE REESE&#039;S Peanut Butter">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -285,17 +285,17 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Sabor auténtico de REESE'S con solo 3g de azúcar y certificación Kosher.</p>
                     </div>
-                    <div class="product-price">{{product_8.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
 
             <!-- Product 9 -->
             <div class="product-card">
-                <img src="{{product_9.image}}" alt="{{product_9.name}}" loading="lazy">
+                <img src="https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-9-david-gold.jpg" alt="David Gold" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product_9.name}}</h3>
-                    <p class="product-short-desc">{{product_9.description}}</p>
-                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_9.name}}">Ver más detalles ▼</button>
+                    <h3>David Gold</h3>
+                    <p class="product-short-desc">Máxima relación proteína/calorías: 28g proteína, 150 calorías, 0g azúcar. Mezcla de proteínas (leche, colágeno, whey, clara de huevo). Peso: 62g. Sabores: Chocolate Chip Cookie Dough, Peanut Butter, Fudge Brownie, Blueberry Pie, Cinnamon Roll, Pumpkin Spice (limitada) y más.</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de David Gold">Ver más detalles ▼</button>
                     <div class="product-details" style="display: none;">
                         <h4>Nutrientes clave:</h4>
                         <ul>
@@ -306,7 +306,7 @@
                         <h4>¿Por qué elegir este producto?</h4>
                         <p>Máxima relación proteína/calorías con 0g de azúcar, ideal para definición.</p>
                     </div>
-                    <div class="product-price">{{product_9.price}}</div>
+                    <div class="product-price">Consulta disponibilidad</div>
                 </div>
             </div>
         </div>
@@ -319,11 +319,11 @@
     </section>
 
     <footer>
-        <p>{{footer.copyright}}</p>
-        <div>{{footer.links}}</div>
+        <p>© 2026 Estefit Wellness. Todos los derechos reservados.</p>
+        <div>[object Object],[object Object],[object Object],[object Object]</div>
         <div class="social-links">
-            <a href="{{brand.instagram}}" target="_blank" rel="noopener">Instagram</a>
-            <a href="{{brand.tiktok}}" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://instagram.com/este_fit92" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://tiktok.com/@estefit_92" target="_blank" rel="noopener">TikTok</a>
         </div>
     </footer>
 

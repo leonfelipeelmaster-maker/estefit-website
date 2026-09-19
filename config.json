@@ -236,7 +236,10 @@
       "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-norte-conexion.png",
       "name": "Norte Conexión",
       "description": "Tu socio en distribución de productos premium de nutrición y bienestar"
-    }
+    },
+    "investment_min": 3000,
+    "investment_max": 7000,
+    "roi_months": "3-6"
   },
   "contact": {
     "email": "contacto@estefit.com",
@@ -387,5 +390,10 @@
     "protein_g": "28g",
     "sugar_g": "0g",
     "price": "Consulta disponibilidad"
+  },
+  "norte_conexion": {
+    "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-norte-conexion.png",
+    "name": "Norte Conexión",
+    "description": "Tu socio en distribución de productos premium de nutrición y bienestar"
   }
 }
