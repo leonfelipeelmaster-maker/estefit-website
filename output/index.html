@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTEFIT | Nutrición Premium para tu Estilo Activo</title>
+    <meta name="description" content="Descubre nuestro catálogo de barras de proteína premium importadas de EE.UU. y Canadá. Sabor que disfrutas, proteína que te impulsa.">
+    <meta property="og:title" content="ESTEFIT - Sabor que disfrutas. Proteína que te impulsa.">
+    <meta property="og:description" content="Productos de nutrición y bienestar para atletas, gimnasios y estilo de vida activo.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://estefit.store">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ESTEFIT",
+      "description": "Marca de nutrición y bienestar con productos premium importados de EE.UU. y Canadá",
+      "url": "https://estefit.store",
+      "logo": "{{brand.logo}}",
+      "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80",
+      "telephone": "+52-800-555-0199",
+      "email": "info@estefit.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{contact.address}}",
+        "addressCountry": "MX"
+      },
+      "sameAs": ["{{brand.instagram}}", "{{brand.tiktok}}"]
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #D4AF37;
+            --accent: #E63946;
+            --background: #FFFFFF;
+            --text: #1A1A1A;
+            --hero-overlay: rgba(29, 53, 87, 0.72);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); background: var(--background); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        
+        nav { background: var(--primary); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        nav img { height: 50px; }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; }
+        nav a { color: white; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--secondary); }
+
+        .hero { position: relative; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80') center/cover no-repeat; }
+        .hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay); }
+        .hero-content { position: relative; z-index: 1; padding: 2rem; max-width: 800px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--secondary); }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+        .cta-btn { background: var(--secondary); color: var(--primary); padding: 1rem 2rem; font-size: 1.2rem; font-weight: bold; border-radius: 5px; transition: background 0.3s; display: inline-block; }
+        .cta-btn:hover { background: #b8962e; }
+
+        .products-section { padding: 4rem 5%; background: #f9f9f9; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--primary); }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .product-card img { width: 100%; max-width: 280px; height: 200px; object-fit: cover; margin: 0 auto; display: block; }
+        .product-info { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-info h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .product-short-desc { font-size: 0.9rem; color: #555; margin-bottom: 1rem; flex-grow: 1; }
+        .product-price { color: var(--secondary); font-weight: bold; font-size: 1.1rem; text-align: right; margin-top: auto; }
+
+        .expand-btn {
+            background: none; border: none; color: var(--secondary); cursor: pointer; font-weight: 600;
+            padding: 0.5rem 0; margin: 0.5rem 0; transition: color 0.3s; font-size: 0.95rem; text-align: left; width: 100%;
+        }
+        .expand-btn:hover { color: var(--accent); }
+        .product-details {
+            background: #f9f9f9; padding: 1rem; border-left: 3px solid var(--secondary);
+            margin: 0.5rem 0; border-radius: 4px; display: none;
+        }
+        .product-details h4 { color: var(--primary); margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .product-details ul, .product-details p { margin-left: 1rem; font-size: 0.9rem; line-height: 1.5; }
+        .product-details li { margin-bottom: 0.3rem; }
+
+        .franchise-cta { background: var(--primary); color: white; text-align: center; padding: 4rem 5%; }
+        .franchise-cta h2 { color: var(--secondary); margin-bottom: 1rem; }
+        .franchise-cta p { margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        footer { background: #111; color: #aaa; text-align: center; padding: 2rem 5%; }
+        footer a { color: var(--secondary); margin: 0 0.5rem; }
+        footer a:hover { text-decoration: underline; }
+        .social-links { margin-top: 1rem; }
+        .social-links a { margin: 0 1rem; font-size: 1.2rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+            nav ul { gap: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="{{brand.logo}}" alt="Logo ESTEFIT" loading="lazy">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="franchise.html">Franquicia</a></li>
+            <li><a href="contact-form.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Potencia tu Rendimiento</h1>
+            <p>Barras de proteína, café bebible con proteína y bebidas proteicas en lata diseñadas para gimnasios, atletas y ciclistas.</p>
+            <a href="https://estefit.store/tienda/destacado" class="cta-btn">Ver Producto Destacado</a>
+        </div>
+    </header>
+
+    <section id="productos" class="products-section">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="{{product_1.image}}" alt="{{product_1.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_1.name}}</h3>
+                    <p class="product-short-desc">{{product_1.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_1.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 12-14g</li>
+                            <li>Azúcar: 4-8g</li>
+                            <li>Tipo: Whey protein hidrolizada</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Textura de wafer crujiente con proteína de alto grado para tu recuperación diaria.</p>
+                    </div>
+                    <div class="product-price">{{product_1.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="{{product_2.image}}" alt="{{product_2.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_2.name}}</h3>
+                    <p class="product-short-desc">{{product_2.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_2.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Azúcar: 0g (Sin azúcar añadida)</li>
+                            <li>Tipo: Mezcla de caseinato, whey isolate y concentrate</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Textura indulgente con capas y cobertura de chocolate, sin azúcar añadida.</p>
+                    </div>
+                    <div class="product-price">{{product_2.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="{{product_3.image}}" alt="{{product_3.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_3.name}}</h3>
+                    <p class="product-short-desc">{{product_3.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_3.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Azúcar: Bajo</li>
+                            <li>Tipo: Plant-based</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>100% plant-based, sin gluten y sin endulzantes artificiales.</p>
+                    </div>
+                    <div class="product-price">{{product_3.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="{{product_4.image}}" alt="{{product_4.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_4.name}}</h3>
+                    <p class="product-short-desc">{{product_4.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_4.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Azúcar: Bajo</li>
+                            <li>Tipo: Plant-based</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Colaboración exclusiva con OREO, bajo índice glucémico y apto para veganos.</p>
+                    </div>
+                    <div class="product-price">{{product_4.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="{{product_5.image}}" alt="{{product_5.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_5.name}}</h3>
+                    <p class="product-short-desc">{{product_5.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_5.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Azúcar: 5g</li>
+                            <li>Tipo: Whey protein</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Gran variedad de sabores deliciosos con alto contenido proteico y bajo en azúcar.</p>
+                    </div>
+                    <div class="product-price">{{product_5.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="{{product_6.image}}" alt="{{product_6.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_6.name}}</h3>
+                    <p class="product-short-desc">{{product_6.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_6.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Azúcar: Bajo</li>
+                            <li>Tipo: Whey protein</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Combinación premium de chocolate, cacahuate y caramelo con cobertura real.</p>
+                    </div>
+                    <div class="product-price">{{product_6.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="{{product_7.image}}" alt="{{product_7.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_7.name}}</h3>
+                    <p class="product-short-desc">{{product_7.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_7.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 20g</li>
+                            <li>Carbohidratos: Alto</li>
+                            <li>Tipo: Whey protein de alta calidad</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Fórmula específica para recuperación post-entrenamiento con carbohidratos y proteína.</p>
+                    </div>
+                    <div class="product-price">{{product_7.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="{{product_8.image}}" alt="{{product_8.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_8.name}}</h3>
+                    <p class="product-short-desc">{{product_8.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_8.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 18g</li>
+                            <li>Azúcar: 3g</li>
+                            <li>Tipo: Whey protein</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Sabor auténtico de REESE'S con solo 3g de azúcar y certificación Kosher.</p>
+                    </div>
+                    <div class="product-price">{{product_8.price}}</div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="{{product_9.image}}" alt="{{product_9.name}}" loading="lazy">
+                <div class="product-info">
+                    <h3>{{product_9.name}}</h3>
+                    <p class="product-short-desc">{{product_9.description}}</p>
+                    <button class="expand-btn" aria-expanded="false" aria-label="Ver más detalles de {{product_9.name}}">Ver más detalles ▼</button>
+                    <div class="product-details" style="display: none;">
+                        <h4>Nutrientes clave:</h4>
+                        <ul>
+                            <li>Proteína: 28g</li>
+                            <li>Azúcar: 0g</li>
+                            <li>Tipo: Mezcla de proteínas (leche, colágeno, whey, clara)</li>
+                        </ul>
+                        <h4>¿Por qué elegir este producto?</h4>
+                        <p>Máxima relación proteína/calorías con 0g de azúcar, ideal para definición.</p>
+                    </div>
+                    <div class="product-price">{{product_9.price}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="franchise-cta">
+        <h2>¿Quieres hacer crecer tu negocio?</h2>
+        <p>Únete al modelo de franquicia de Estefit Wellness y construye tu propia comunidad con productos premium.</p>
+        <a href="franchise.html" class="cta-btn">Conoce el Modelo de Franquicia</a>
+    </section>
+
+    <footer>
+        <p>© 2026 ESTEFIT Nutrición. Todos los derechos reservados.</p>
+        <div>{{footer.links}}</div>
+        <div class="social-links">
+            <a href="{{brand.instagram}}" target="_blank" rel="noopener">Instagram</a>
+            <a href="{{brand.tiktok}}" target="_blank" rel="noopener">TikTok</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.expand-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const details = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                this.setAttribute('aria-expanded', !isExpanded);
+                details.style.display = isExpanded ? 'none' : 'block';
+                this.textContent = isExpanded ? 'Ver más detalles ▼' : 'Ver menos detalles ▲';
+            });
+        });
+    </script>
+</body>
+</html>

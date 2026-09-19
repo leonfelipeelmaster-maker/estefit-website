@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franquicia ESTEFIT | Construye tu marca</title>
+    <meta name="description" content="Desarrolla tu propio negocio de nutrición y bienestar con el modelo de franquicia de Estefit Wellness. Inversión accesible y alto ROI.">
+    <meta property="og:title" content="Franquicia ESTEFIT">
+    <meta property="og:description" content="Construye tu marca. Crea tu comunidad. Haz crecer tu negocio con productos premium.">
+    <meta property="og:image" content="{{brand.logo}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://estefit.store/franchise.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ESTEFIT",
+      "description": "Marca de nutrición y bienestar con productos premium importados de EE.UU. y Canadá",
+      "url": "https://estefit.store",
+      "logo": "{{brand.logo}}",
+      "telephone": "+52-800-555-0199",
+      "email": "info@estefit.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{contact.address}}",
+        "addressCountry": "MX"
+      }
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #D4AF37;
+            --accent: #E63946;
+            --background: #FFFFFF;
+            --text: #1A1A1A;
+            --hero-overlay: rgba(29, 53, 87, 0.72);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); background: var(--background); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        
+        nav { background: var(--primary); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        nav img { height: 50px; }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; }
+        nav a { color: white; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--secondary); }
+
+        .hero-small { position: relative; height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80') center/cover no-repeat; }
+        .hero-small .hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay); }
+        .hero-small .hero-content { position: relative; z-index: 1; padding: 2rem; }
+        .hero-small h1 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 0.5rem; }
+        .hero-small p { font-size: 1.2rem; }
+
+        .section { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: var(--primary); }
+        
+        .investment-box { background: #f4f4f4; padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--secondary); margin-bottom: 3rem; }
+        .investment-box h3 { color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem; }
+        .investment-amount { font-size: 2.5rem; color: var(--secondary); font-weight: bold; }
+        
+        .info-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem; }
+        .info-grid-3 ul, .info-grid-3 ol { padding-left: 1.5rem; }
+        .info-grid-3 li { margin-bottom: 0.8rem; }
+        
+        .partners { text-align: center; padding: 3rem 5%; background: #f9f9f9; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
+        .partner-item img { height: 80px; margin-bottom: 1rem; }
+        .partner-item p { color: #666; }
+
+        .cta-btn { background: var(--secondary); color: var(--primary); padding: 1rem 2rem; font-size: 1.2rem; font-weight: bold; border-radius: 5px; transition: background 0.3s; display: inline-block; text-align: center; }
+        .cta-btn:hover { background: #b8962e; }
+        .center-cta { text-align: center; margin-top: 2rem; }
+
+        footer { background: #111; color: #aaa; text-align: center; padding: 2rem 5%; }
+        footer a { color: var(--secondary); margin: 0 0.5rem; }
+        footer a:hover { text-decoration: underline; }
+        .social-links { margin-top: 1rem; }
+        .social-links a { margin: 0 1rem; font-size: 1.2rem; }
+
+        @media (max-width: 900px) {
+            .info-grid-3 { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-small h1 { font-size: 2rem; }
+            nav ul { gap: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="{{brand.logo}}" alt="Logo ESTEFIT" loading="lazy">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="franchise.html">Franquicia</a></li>
+            <li><a href="contact-form.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-small">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Franquicia Estefit</h1>
+            <p>Construye tu marca. Crea tu comunidad. Haz crecer tu negocio.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="investment-box">
+            <h3>Inversión y ROI</h3>
+            <p>Inversión inicial desde <span class="investment-amount">${{franchise.investment_min}}</span> hasta <span class="investment-amount">${{franchise.investment_max}} MXN</span></p>
+            <p style="margin-top: 1rem;">Recuperación de inversión estimada en <strong>{{franchise.roi_months}} meses</strong>.</p>
+        </div>
+
+        <h2 class="section-title">Modelo de Negocio</h2>
+        
+        <div class="info-grid-3">
+            <div>
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Beneficios del Modelo</h3>
+                [object Object]
+            </div>
+            <div>
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Requisitos</h3>
+                [object Object]
+            </div>
+            <div>
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Proceso</h3>
+                [object Object]
+            </div>
+        </div>
+
+        <div class="center-cta">
+            <a href="contact-form.html" class="cta-btn">Solicita Información</a>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="partner-item">
+            <img src="{{brand.logo}}" alt="ESTEFIT" loading="lazy">
+            <p><strong>ESTEFIT</strong></p>
+        </div>
+        <div class="partner-item">
+            <img src="{{norte_conexion.logo}}" alt="{{norte_conexion.name}}" loading="lazy">
+            <p><strong>{{norte_conexion.name}}</strong> — {{norte_conexion.description}}</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ESTEFIT Nutrición. Todos los derechos reservados.</p>
+        <div>{{footer.links}}</div>
+        <div class="social-links">
+            <a href="{{brand.instagram}}" target="_blank" rel="noopener">Instagram</a>
+            <a href="{{brand.tiktok}}" target="_blank" rel="noopener">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
