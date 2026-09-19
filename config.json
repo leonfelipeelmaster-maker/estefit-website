@@ -1,231 +1,391 @@
 {
   "seo": {
-    "meta_title": "ESTEFIT | Nutrición Premium para Atletas y Gimnasios",
-    "meta_description": "Barras de proteína, café con proteína y bebidas energéticas diseñadas para atletas, ciclistas y gimnasios. Envíos a toda México.",
-    "og_title": "ESTEFIT - Combustible para tu Rendimiento",
-    "og_description": "Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.",
-    "og_image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+    "meta_title": "Estefit Wellness | Nutrición Premium para tu Estilo Activo",
+    "meta_description": "Descubre nuestro catálogo de barras de proteína premium importadas de EE.UU. y Canadá. Sabor que disfrutas, proteína que te impulsa.",
+    "og_title": "Estefit Wellness - Sabor que disfrutas. Proteína que te impulsa.",
+    "og_description": "Productos de nutrición y bienestar para atletas, gimnasios y estilo de vida activo.",
+    "og_image": "images/hero-estefit.jpg",
     "twitter_card": "summary_large_image",
     "canonical": "https://estefit.store",
-    "keywords": "proteína, barras proteína, café proteína, bebidas energéticas, nutrición deportes, gimnasio, ciclismo, México",
+    "keywords": "proteína, barras proteína, nutrición, bienestar, fitness, México, Norte Conexión",
     "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   },
   "schema": {
     "type": "LocalBusiness",
-    "name": "ESTEFIT",
-    "description": "Empresa de nutrición deportiva con productos proteicos premium",
+    "name": "Estefit Wellness",
+    "description": "Marca de nutrición y bienestar con productos premium importados de EE.UU. y Canadá",
     "url": "https://estefit.store",
-    "logo": "https://estefit.store/logo.png",
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
-    "telephone": "+52-800-555-0199",
-    "email": "info@estefit.com",
+    "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-estefit.png",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg",
+    "telephone": "+52-555-123-4567",
+    "email": "contacto@estefit.com",
     "address": {
       "type": "PostalAddress",
-      "streetAddress": "México",
+      "streetAddress": "Ciudad de México",
       "addressCountry": "MX"
     },
     "sameAs": [
-      "https://facebook.com/estefit",
-      "https://instagram.com/estefit",
-      "https://twitter.com/estefit"
+      "https://instagram.com/este_fit92",
+      "https://tiktok.com/@estefit_92"
     ]
   },
   "brand": {
-    "name": "ESTEFIT",
-    "tagline": "Energía que no se detiene. Rendimiento que no se rinde.",
+    "name": "Estefit Wellness",
+    "tagline": "Sabor que disfrutas. Proteína que te impulsa.",
+    "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-estefit.png",
     "colors": {
-      "primary": "#000000",
-      "secondary": "#FF8C00",
+      "primary": "#1a1a1a",
+      "secondary": "#D4AF37",
+      "accent": "#E63946",
       "background": "#FFFFFF",
       "text": "#1A1A1A"
     },
-    "cta_text": "Comprar Ahora"
+    "instagram": "https://instagram.com/este_fit92",
+    "tiktok": "https://tiktok.com/@estefit_92"
   },
   "navigation": {
     "home_link": "index.html",
     "home_text": "Inicio",
+    "products_link": "index.html#productos",
+    "products_text": "Productos",
     "contact_link": "contact-form.html",
+    "contact_text": "Contacto",
     "franchise_link": "franchise.html",
-    "franchise_text": "Franquicias"
+    "franchise_text": "Franquicia"
   },
   "hero": {
-    "title": "Potencia tu Rendimiento",
-    "subtitle": "Barras de proteína, café bebible con proteína y bebidas proteicas en lata diseñadas para gimnasios, atletas y ciclistas.",
-    "cta_text": "Ver Producto Destacado",
-    "cta_link": "https://estefit.store/tienda/destacado",
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
-    "image_alt": "Atleta consumiendo producto ESTEFIT de nutrición deportiva"
-  },
-  "contact": {
-    "email": "info@estefit.com",
-    "phone": "+52-800-555-0199",
-    "website": "https://estefit.store",
-    "email_label": "Correo:",
-    "phone_label": "Teléfono:",
-    "website_label": "Sitio Web:",
-    "form": {
-      "title": "Contáctanos",
-      "subtitle": "¿Tienes preguntas sobre nuestros productos o franquicias? Nos encantaría saber de ti.",
-      "action_url": "https://estefit.store/api/enviar-contacto",
-      "success_message": "¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos muy pronto.",
-      "name_label": "Nombre Completo",
-      "name_placeholder": "Juan Pérez",
-      "email_label": "Correo Electrónico",
-      "email_placeholder": "juan@ejemplo.com",
-      "phone_label": "Número de Teléfono",
-      "phone_placeholder": "+52 (55) 1234-5678",
-      "franchise_checkbox": "Me interesa conocer más sobre las oportunidades de franquicia de ESTEFIT",
-      "message_label": "Tu Mensaje",
-      "message_placeholder": "¿En qué te podemos ayudar?",
-      "submit_text": "Enviar Mensaje",
-      "errors": {
-        "name": "El nombre es requerido",
-        "email": "Email inválido",
-        "phone": "Teléfono inválido",
-        "message": "El mensaje es requerido"
-      }
-    }
-  },
-  "social": {
-    "facebook": "https://facebook.com/estefit",
-    "facebook_name": "Facebook",
-    "instagram": "https://instagram.com/estefit",
-    "instagram_name": "Instagram",
-    "twitter": "https://twitter.com/estefit",
-    "twitter_name": "Twitter",
-    "youtube": "https://youtube.com/estefit",
-    "youtube_name": "YouTube"
-  },
-  "footer": {
-    "franchise_link": "franchise.html",
-    "franchise_text": "Abre una Franquicia ESTEFIT",
-    "privacy_text": "Aviso de Privacidad",
-    "terms_text": "Términos y Condiciones",
-    "copyright": "© 2026 ESTEFIT Nutrición. Todos los derechos reservados."
+    "title": "Sabor que disfrutas",
+    "subtitle": "Proteína de calidad para impulsar tu transformación",
+    "cta_text": "Ver Catálogo",
+    "cta_link": "https://leonfelipeelmaster-maker.github.io/estefit-website/index.html#productos",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg",
+    "image_alt": "Modelo fitness con barra Estefit en gimnasio"
   },
   "products": {
-    "section_title": "Nuestra Nutrición Premium",
     "items": [
       {
-        "name": "Barra de Proteína ESTEFIT - Chocolate y Cacahuate",
-        "description": "Chocolate intenso y cacahuates crujientes con 20g de proteína de suero premium.",
-        "price": "$79.00 MXN",
-        "image": "https://images.unsplash.com/photo-1622484211148-7328a2c8a739?auto=format&fit=crop&w=500&q=80",
-        "alt": "Barra de proteína ESTEFIT chocolate y cacahuate"
+        "id": 1,
+        "name": "Power Crunch Protein Bars",
+        "description": "Barras de proteína con textura de wafer crujiente. 12-14g de proteína, bajo en azúcar (4-8g). Whey protein hidrolizada de alto grado. Sabores: Cookies & Cream, Peanut Butter, Triple Chocolate, Vanilla, Strawberry, Red Velvet, Salted Caramel y más.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-1-power-crunch-protein-bars.jpg",
+        "protein_g": "12-14g",
+        "sugar_g": "4-8g",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Barra de Proteína ESTEFIT - Explosión de Frutos Rojos",
-        "description": "Sabor a frutos rojos mixtos con 18g de proteína y sin azúcar añadida para energía limpia.",
-        "price": "$79.00 MXN",
-        "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=500&q=80",
-        "alt": "Barra de proteína ESTEFIT frutos rojos"
+        "id": 2,
+        "name": "Barebells Original",
+        "description": "20g de proteína por barra. Sin azúcar añadida. Textura con capas, relleno y cobertura de chocolate. Mezcla de caseinato de calcio, whey isolate y whey concentrate. Sabores: Cookies & Cream, Chocolate Dough, Peanut Butter, Caramel, Birthday Cake, Mint Chocolate y más.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-2-barebells-original.jpg",
+        "protein_g": "20g",
+        "sugar_g": "0g",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Barra de Proteína ESTEFIT - Avena Crujiente",
-        "description": "Avena y miel con 15g de proteína vegetal para una resistencia sostenida.",
-        "price": "$69.00 MXN",
-        "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=500&q=80",
-        "alt": "Barra de proteína ESTEFIT avena crujiente"
+        "id": 3,
+        "name": "CLIF BUILDERS Protein",
+        "description": "Barra plant-based con 20g de proteína. Sin gluten, Non-GMO, sin endulzantes artificiales. Sabores: Chocolate, Chocolatey Peanut Butter, Vanilla Almond, Cookies N Creme, Chocolate Chip Cookie Dough y más.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-3-clif-builders-protein.jpg",
+        "protein_g": "20g",
+        "sugar_g": "Bajo",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Café Bebible ESTEFIT - Moca Boost",
-        "description": "Café cold brew infusionado con 25g de proteína de suero para el mejor impulso matutino.",
-        "price": "$99.00 MXN",
-        "image": "https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?auto=format&fit=crop&w=500&q=80",
-        "alt": "Café bebible ESTEFIT Moca Boost con proteína"
+        "id": 4,
+        "name": "CLIF BUILDERS OREO",
+        "description": "Colaboración con OREO. 20g de proteína, plant-based. Non-GMO, bajo índice glucémico, sin gluten. Versión White Fudge OREO disponible.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-4-clif-builders-oreo.jpg",
+        "protein_g": "20g",
+        "sugar_g": "Bajo",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Café Bebible ESTEFIT - Latte de Vainilla",
-        "description": "Latte suave de vainilla con 20g de proteína, perfecto para el enfoque pre-entreno.",
-        "price": "$99.00 MXN",
-        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=80",
-        "alt": "Café bebible ESTEFIT Latte vainilla con proteína"
+        "id": 5,
+        "name": "Pure Protein Variedad",
+        "description": "Alto contenido de proteína, bajo en azúcar. Sabores: Chocolate Deluxe, Peanut Butter, Caramel, Cookies & Cream, Mint Chocolate, Birthday Cake y más. Cookies & Cream: 20g proteína, 5g azúcar.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-5-pure-protein-variedad.jpg",
+        "protein_g": "20g",
+        "sugar_g": "5g",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Café Bebible ESTEFIT - Cold Brew Extremo",
-        "description": "Cold brew con cafeína extra y 30g de proteína diseñado para atletas de élite.",
-        "price": "$109.00 MXN",
-        "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80",
-        "alt": "Café bebible ESTEFIT Cold Brew Extremo alta cafeína"
+        "id": 6,
+        "name": "Pure Protein Cocoa Peanuts",
+        "description": "Combinación de chocolate, cacahuate y caramelo. 20g de proteína. Formulación premium con cobertura chocolate.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-6-pure-protein-cocoa-peanuts.jpg",
+        "protein_g": "20g",
+        "sugar_g": "Bajo",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Proteína en Lata ESTEFIT - Recuperación de Frutos Rojos",
-        "description": "Bebida proteica post-entreno con BCAAs y jugo real de frutos rojos.",
-        "price": "$79.00 MXN",
-        "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=80",
-        "alt": "Bebida proteica en lata ESTEFIT frutos rojos post-entreno"
+        "id": 7,
+        "name": "Gatorade Recovery Protein Bar",
+        "description": "Diseñada para recuperación post-entrenamiento. 20g proteína + carbohidratos. Whey protein de alta calidad. Peso: 80g. Sabores: Peanut Butter Chocolate, Chocolate Chip, Chocolate Caramel, Cookies & Crème, Mint Chocolate Crunch.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-7-gatorade-recovery-protein-bar.jpg",
+        "protein_g": "20g",
+        "carbs_g": "Alto",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Proteína en Lata ESTEFIT - Hidratación Tropical",
-        "description": "Mezcla de agua de coco y proteína optimizada para ciclistas y atletas de resistencia.",
-        "price": "$89.00 MXN",
-        "image": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=500&q=80",
-        "alt": "Bebida proteica ESTEFIT hidratación tropical ciclistas"
+        "id": 8,
+        "name": "ONE REESE'S Peanut Butter",
+        "description": "Colaboración con REESE'S. 18g proteína, 3g azúcar. 250 calorías. Sabor chocolate + crema de cacahuate. Sin gluten, Kosher. Peso: 60g.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-8-one-reese's-peanut-butter.jpg",
+        "protein_g": "18g",
+        "sugar_g": "3g",
+        "price": "Consulta disponibilidad"
       },
       {
-        "name": "Proteína en Lata ESTEFIT - Energía Cítrica",
-        "description": "Sabor cítrico de naranja y limón con 22g de proteína y electrolitos esenciales.",
-        "price": "$89.00 MXN",
-        "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=80",
-        "alt": "Bebida energética ESTEFIT cítrica naranja limón electrolitos"
+        "id": 9,
+        "name": "David Gold",
+        "description": "Máxima relación proteína/calorías: 28g proteína, 150 calorías, 0g azúcar. Mezcla de proteínas (leche, colágeno, whey, clara de huevo). Peso: 62g. Sabores: Chocolate Chip Cookie Dough, Peanut Butter, Fudge Brownie, Blueberry Pie, Cinnamon Roll, Pumpkin Spice (limitada) y más.",
+        "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-9-david-gold.jpg",
+        "protein_g": "28g",
+        "sugar_g": "0g",
+        "price": "Consulta disponibilidad"
       }
     ]
   },
   "franchise": {
     "hero": {
-      "title": "Únete al Movimiento ESTEFIT",
-      "subtitle": "Asóciate con una marca líder en nutrición deportiva y lleva productos premium de alto rendimiento a tu comunidad.",
-      "cta_text": "Inicia tu Solicitud"
+      "title": "Franquicia Estefit",
+      "subtitle": "Construye tu marca. Crea tu comunidad. Haz crecer tu negocio.",
+      "description": "Estefit desarrolla un modelo de Franquicia Comercial para personas que quieren iniciar o hacer crecer un negocio de nutrición, proteínas y bebidas funcionales.",
+      "cta_text": "Solicita Información"
+    },
+    "proposal": {
+      "title": "Propuesta de Negocio",
+      "description": "Puedes integrarlo a un negocio que ya tienes —como un gimnasio, tienda o establecimiento— o comenzar desarrollando tu propio punto de venta y comunidad digital."
+    },
+    "how_it_works": {
+      "title": "¿Cómo Funciona?",
+      "steps": [
+        "Tú desarrollas tu negocio y tu marca",
+        "Estefit te proporciona productos, apoyo comercial y CRM",
+        "Una plataforma para crecer con inventario desde $3,000 MXN",
+        "Aumenta progresivamente conforme crezcan tus ventas"
+      ]
+    },
+    "investment": {
+      "title": "Inversión y ROI",
+      "min_investment": 3000,
+      "max_investment": 7000,
+      "currency": "MXN",
+      "roi_min_months": 3,
+      "roi_max_months": 6,
+      "description": "La meta comercial es lograr una recuperación de la inversión inicial aproximadamente entre 3 y 6 meses."
     },
     "benefits": {
-      "title": "¿Por qué asociarte con nosotros?",
-      "item1": {
-        "title": "Modelo de Negocio Comprobado",
-        "description": "Aprovecha nuestro reconocimiento de marca y un manual operativo diseñado para un retorno de inversión rápido."
-      },
-      "item2": {
-        "title": "Capacitación Integral",
-        "description": "Recibe capacitación de principio a fin para ti y tu personal en conocimiento del producto, ventas y alianzas con gimnasios."
-      },
-      "item3": {
-        "title": "Soporte de Marketing",
-        "description": "Accede a campañas nacionales, recursos digitales localizados y apoyo para tu gran inauguración."
-      }
+      "title": "Beneficios del Modelo",
+      "items": [
+        "Inversión accesible para comenzar",
+        "Acceso a productos diferenciados de EE.UU. y Canadá",
+        "Incorporación progresiva de productos de exportación",
+        "Construcción de comunidad digital alrededor de tu marca",
+        "Apoyo digital en redes sociales e internet",
+        "Estrategias comerciales y apoyo en ventas",
+        "Crecimiento progresivo: aumenta inventario conforme crece tu negocio",
+        "Protección de inventario con opción de devolución"
+      ]
     },
     "requirements": {
-      "title": "Requisitos de Franquicia",
-      "item1": "Capital líquido mínimo de $3,000,000 MXN",
-      "item2": "Gran pasión por el fitness, la nutrición y el bienestar comunitario",
-      "item3": "Disposición para cumplir con los estándares de marca y lineamientos operativos de ESTEFIT"
+      "title": "Requisitos",
+      "items": [
+        "Visión clara de negocio y determinación",
+        "Interés en desarrollar comunidad digital",
+        "Disposición para trabajar con redes sociales",
+        "Capacidad de gestionar relaciones con clientes",
+        "Flexibilidad para adaptarse al modelo de crecimiento"
+      ]
     },
     "process": {
-      "title": "El Camino a tu Franquicia",
-      "step1": {
-        "title": "Solicita",
-        "description": "Envía tu consulta inicial y antecedentes financieros a través de nuestro formulario de contacto."
-      },
-      "step2": {
-        "title": "Descubre",
-        "description": "Reúnete con nuestro equipo de desarrollo de franquicias para conocer a detalle la marca y las expectativas."
-      },
-      "step3": {
-        "title": "Lanza",
-        "description": "Firma el contrato, completa la capacitación y abre tus puertas con el respaldo total de ESTEFIT."
+      "title": "Proceso para Adquirir una Franquicia",
+      "steps": [
+        "Contacto inicial y presentación del modelo",
+        "Revisión de tu perfil y visión de negocio",
+        "Presentación detallada del catálogo y términos",
+        "Decisión y firma del acuerdo de franquicia",
+        "Acceso a plataforma CRM y herramientas digitales",
+        "Inicio de operaciones con inventario inicial"
+      ]
+    },
+    "community": {
+      "title": "Desarrolla tu Propia Comunidad",
+      "description": "Tu comunidad estará formada por personas interesadas en nutrición, deporte, fitness, productos innovadores y un estilo de vida activo.",
+      "channels": [
+        "Instagram",
+        "Facebook",
+        "Página web",
+        "WhatsApp",
+        "Punto de venta"
+      ],
+      "note": "Tu comunidad se convierte en un canal permanente para generar clientes y ventas sin depender únicamente de visitas físicas."
+    },
+    "models": {
+      "title": "Integra Estefit a tu Modelo Actual",
+      "options": [
+        "Gimnasio: Convierte usuarios en consumidores de productos",
+        "Tienda: Agrega productos diferenciados y nueva fuente de ingresos",
+        "Punto de Venta: Exhibe y comercializa productos",
+        "Negocio Digital: Promueve directamente a tu comunidad",
+        "Establecimiento: Integra nueva categoría de productos",
+        "Nuevo Emprendimiento: Desarrolla tu marca desde cero"
+      ]
+    },
+    "norte_conexion": {
+      "logo": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/logo-norte-conexion.png",
+      "name": "Norte Conexión",
+      "description": "Tu socio en distribución de productos premium de nutrición y bienestar"
+    }
+  },
+  "contact": {
+    "email": "contacto@estefit.com",
+    "phone": "+52-555-123-4567",
+    "address": "Ciudad de México, México",
+    "hours": "Lunes a Viernes, 9:00 AM - 6:00 PM",
+    "email_label": "Correo:",
+    "phone_label": "Teléfono:",
+    "address_label": "Ubicación:",
+    "hours_label": "Horarios:",
+    "form": {
+      "title": "Contáctanos",
+      "subtitle": "¿Tienes preguntas sobre nuestros productos o franquicia? Nos encantaría saber de ti.",
+      "success_message": "¡Gracias! Tu mensaje ha sido recibido. Te contactaremos pronto.",
+      "name_label": "Nombre Completo",
+      "name_placeholder": "Juan Pérez",
+      "email_label": "Correo Electrónico",
+      "email_placeholder": "juan@ejemplo.com",
+      "phone_label": "Teléfono",
+      "phone_placeholder": "+52 (55) 1234-5678",
+      "interest_label": "¿En qué estás interesado?",
+      "interest_options": [
+        "Productos",
+        "Franquicia",
+        "Otro"
+      ],
+      "message_label": "Mensaje",
+      "message_placeholder": "¿En qué te podemos ayudar?",
+      "submit_text": "Enviar",
+      "errors": {
+        "name_required": "El nombre es requerido",
+        "name_min": "El nombre debe tener al menos 2 caracteres",
+        "email_required": "El correo es requerido",
+        "email_invalid": "Ingresa un correo válido",
+        "phone_required": "El teléfono es requerido",
+        "phone_invalid": "Ingresa un teléfono válido (10 dígitos)",
+        "interest_required": "Selecciona una opción",
+        "message_required": "El mensaje es requerido"
       }
     },
-    "faq": {
-      "title": "Preguntas Frecuentes",
-      "q1": "¿Cuál es la inversión total requerida?",
-      "a1": "La inversión inicial total oscila entre $5,000,000 y $8,000,000 MXN, dependiendo de la ubicación y el tamaño de las instalaciones.",
-      "q2": "¿Necesito experiencia previa en la industria del fitness?",
-      "a2": "No, no se requiere experiencia previa. Nuestro programa de capacitación integral te equipará con todo lo necesario para triunfar.",
-      "q3": "¿Cuánto tiempo toma abrir una sucursal?",
-      "a3": "Desde la firma del contrato hasta la gran inauguración, el tiempo típico es de 6 a 9 meses."
-    },
-    "cta": {
-      "title": "¿Listo para Construir tu Futuro?",
-      "subtitle": "Da el primer paso para ser dueño de una franquicia exitosa de ESTEFIT. Nuestro equipo está listo para responder tus preguntas.",
-      "button_text": "Contactar al Equipo de Franquicias"
-    }
+    "website": "https://estefit.store"
+  },
+  "social": {
+    "instagram": "https://instagram.com/este_fit92",
+    "instagram_name": "Instagram",
+    "tiktok": "https://tiktok.com/@estefit_92",
+    "tiktok_name": "TikTok"
+  },
+  "footer": {
+    "copyright": "© 2026 Estefit Wellness. Todos los derechos reservados.",
+    "tagline": "Sabor que disfrutas. Proteína que te impulsa.",
+    "links": [
+      {
+        "label": "Inicio",
+        "url": "index.html"
+      },
+      {
+        "label": "Productos",
+        "url": "index.html#productos"
+      },
+      {
+        "label": "Franquicia",
+        "url": "franchise.html"
+      },
+      {
+        "label": "Contacto",
+        "url": "contact-form.html"
+      }
+    ]
+  },
+  "product_1": {
+    "id": 1,
+    "name": "Power Crunch Protein Bars",
+    "description": "Barras de proteína con textura de wafer crujiente. 12-14g de proteína, bajo en azúcar (4-8g). Whey protein hidrolizada de alto grado. Sabores: Cookies & Cream, Peanut Butter, Triple Chocolate, Vanilla, Strawberry, Red Velvet, Salted Caramel y más.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-1-power-crunch-protein-bars.jpg",
+    "protein_g": "12-14g",
+    "sugar_g": "4-8g",
+    "price": "Consulta disponibilidad"
+  },
+  "product_2": {
+    "id": 2,
+    "name": "Barebells Original",
+    "description": "20g de proteína por barra. Sin azúcar añadida. Textura con capas, relleno y cobertura de chocolate. Mezcla de caseinato de calcio, whey isolate y whey concentrate. Sabores: Cookies & Cream, Chocolate Dough, Peanut Butter, Caramel, Birthday Cake, Mint Chocolate y más.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-2-barebells-original.jpg",
+    "protein_g": "20g",
+    "sugar_g": "0g",
+    "price": "Consulta disponibilidad"
+  },
+  "product_3": {
+    "id": 3,
+    "name": "CLIF BUILDERS Protein",
+    "description": "Barra plant-based con 20g de proteína. Sin gluten, Non-GMO, sin endulzantes artificiales. Sabores: Chocolate, Chocolatey Peanut Butter, Vanilla Almond, Cookies N Creme, Chocolate Chip Cookie Dough y más.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-3-clif-builders-protein.jpg",
+    "protein_g": "20g",
+    "sugar_g": "Bajo",
+    "price": "Consulta disponibilidad"
+  },
+  "product_4": {
+    "id": 4,
+    "name": "CLIF BUILDERS OREO",
+    "description": "Colaboración con OREO. 20g de proteína, plant-based. Non-GMO, bajo índice glucémico, sin gluten. Versión White Fudge OREO disponible.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-4-clif-builders-oreo.jpg",
+    "protein_g": "20g",
+    "sugar_g": "Bajo",
+    "price": "Consulta disponibilidad"
+  },
+  "product_5": {
+    "id": 5,
+    "name": "Pure Protein Variedad",
+    "description": "Alto contenido de proteína, bajo en azúcar. Sabores: Chocolate Deluxe, Peanut Butter, Caramel, Cookies & Cream, Mint Chocolate, Birthday Cake y más. Cookies & Cream: 20g proteína, 5g azúcar.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-5-pure-protein-variedad.jpg",
+    "protein_g": "20g",
+    "sugar_g": "5g",
+    "price": "Consulta disponibilidad"
+  },
+  "product_6": {
+    "id": 6,
+    "name": "Pure Protein Cocoa Peanuts",
+    "description": "Combinación de chocolate, cacahuate y caramelo. 20g de proteína. Formulación premium con cobertura chocolate.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-6-pure-protein-cocoa-peanuts.jpg",
+    "protein_g": "20g",
+    "sugar_g": "Bajo",
+    "price": "Consulta disponibilidad"
+  },
+  "product_7": {
+    "id": 7,
+    "name": "Gatorade Recovery Protein Bar",
+    "description": "Diseñada para recuperación post-entrenamiento. 20g proteína + carbohidratos. Whey protein de alta calidad. Peso: 80g. Sabores: Peanut Butter Chocolate, Chocolate Chip, Chocolate Caramel, Cookies & Crème, Mint Chocolate Crunch.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-7-gatorade-recovery-protein-bar.jpg",
+    "protein_g": "20g",
+    "carbs_g": "Alto",
+    "price": "Consulta disponibilidad"
+  },
+  "product_8": {
+    "id": 8,
+    "name": "ONE REESE'S Peanut Butter",
+    "description": "Colaboración con REESE'S. 18g proteína, 3g azúcar. 250 calorías. Sabor chocolate + crema de cacahuate. Sin gluten, Kosher. Peso: 60g.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-8-one-reese's-peanut-butter.jpg",
+    "protein_g": "18g",
+    "sugar_g": "3g",
+    "price": "Consulta disponibilidad"
+  },
+  "product_9": {
+    "id": 9,
+    "name": "David Gold",
+    "description": "Máxima relación proteína/calorías: 28g proteína, 150 calorías, 0g azúcar. Mezcla de proteínas (leche, colágeno, whey, clara de huevo). Peso: 62g. Sabores: Chocolate Chip Cookie Dough, Peanut Butter, Fudge Brownie, Blueberry Pie, Cinnamon Roll, Pumpkin Spice (limitada) y más.",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-9-david-gold.jpg",
+    "protein_g": "28g",
+    "sugar_g": "0g",
+    "price": "Consulta disponibilidad"
   }
 }
