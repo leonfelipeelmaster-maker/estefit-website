@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';">
-    <title>{{seo.meta_title}}</title>
-    <meta name="description" content="{{seo.meta_description}}">
-    <link rel="canonical" href="{{seo.canonical}}">
+    <title>ESTEFIT | Nutrición Premium para Atletas y Gimnasios</title>
+    <meta name="description" content="Barras de proteína, café con proteína y bebidas energéticas diseñadas para atletas, ciclistas y gimnasios. Envíos a toda México.">
+    <link rel="canonical" href="https://estefit.store">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{seo.og_title}}">
-    <meta property="og:description" content="{{seo.og_description}}">
-    <meta property="og:image" content="{{seo.og_image}}">
-    <meta name="twitter:card" content="{{seo.twitter_card}}">
-    <meta name="twitter:title" content="{{seo.og_title}}">
-    <meta name="twitter:description" content="{{seo.og_description}}">
-    <meta name="twitter:image" content="{{seo.og_image}}">
-    <link rel="preload" as="image" href="{{hero.image}}">
-    <script type="application/ld+json">{{schema}}</script>
+    <meta property="og:title" content="ESTEFIT - Combustible para tu Rendimiento">
+    <meta property="og:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ESTEFIT - Combustible para tu Rendimiento">
+    <meta name="twitter:description" content="Proteína de calidad para deportistas. Barras, café bebible y bebidas en lata.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <script type="application/ld+json">[object Object]</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: {{brand.colors.primary}};
-            --color-secondary: {{brand.colors.secondary}};
-            --color-background: {{brand.colors.background}};
-            --color-text: {{brand.colors.text}};
+            --color-primary: #000000;
+            --color-secondary: #FF8C00;
+            --color-background: #FFFFFF;
+            --color-text: #1A1A1A;
             --transition-speed: 0.3s;
             --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
             --shadow-md: 0 8px 16px rgba(0,0,0,0.1);
@@ -56,7 +56,7 @@
         header nav a:hover { opacity: 0.8; }
         
         .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{hero.image}}');
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=1200&amp;q=80');
             background-size: cover;
             background-position: center;
             color: var(--color-background);
@@ -142,56 +142,136 @@
 </head>
 <body>
     <header>
-        <h1><span>{{brand.name}}</span></h1>
+        <h1><span>ESTEFIT</span></h1>
         <nav>
-            <a href="{{navigation.franchise_link}}">{{navigation.franchise_text}}</a>
+            <a href="franchise.html">Franquicias</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>{{hero.title}}</h2>
-        <p>{{hero.subtitle}}</p>
-        <a href="{{hero.cta_link}}" class="btn">{{hero.cta_text}}</a>
+        <h2>Potencia tu Rendimiento</h2>
+        <p>Barras de proteína, café bebible con proteína y bebidas proteicas en lata diseñadas para gimnasios, atletas y ciclistas.</p>
+        <a href="#productos" class="btn">Ver Producto Destacado</a>
     </section>
 
     <section class="products-section" id="productos">
-        <h2>{{products.section_title}}</h2>
+        <h2>Nuestra Nutrición Premium</h2>
         <div class="products-grid">
-            <!-- LOOP products.items as product -->
+            
             <div class="product-card">
-                <img src="{{product.image}}" alt="{{product.alt}}" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1622484211148-7328a2c8a739?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT chocolate y cacahuate" loading="lazy">
                 <div class="product-info">
-                    <h3>{{product.name}}</h3>
-                    <p>{{product.description}}</p>
-                    <span class="price">{{product.price}}</span>
-                    <button class="btn">{{brand.cta_text}}</button>
+                    <h3>Barra de Proteína ESTEFIT - Chocolate y Cacahuate</h3>
+                    <p>Chocolate intenso y cacahuates crujientes con 20g de proteína de suero premium.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
                 </div>
             </div>
-            <!-- END LOOP -->
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT frutos rojos" loading="lazy">
+                <div class="product-info">
+                    <h3>Barra de Proteína ESTEFIT - Explosión de Frutos Rojos</h3>
+                    <p>Sabor a frutos rojos mixtos con 18g de proteína y sin azúcar añadida para energía limpia.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Barra de proteína ESTEFIT avena crujiente" loading="lazy">
+                <div class="product-info">
+                    <h3>Barra de Proteína ESTEFIT - Avena Crujiente</h3>
+                    <p>Avena y miel con 15g de proteína vegetal para una resistencia sostenida.</p>
+                    <span class="price">$69.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Moca Boost con proteína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Moca Boost</h3>
+                    <p>Café cold brew infusionado con 25g de proteína de suero para el mejor impulso matutino.</p>
+                    <span class="price">$99.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Latte vainilla con proteína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Latte de Vainilla</h3>
+                    <p>Latte suave de vainilla con 20g de proteína, perfecto para el enfoque pre-entreno.</p>
+                    <span class="price">$99.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Café bebible ESTEFIT Cold Brew Extremo alta cafeína" loading="lazy">
+                <div class="product-info">
+                    <h3>Café Bebible ESTEFIT - Cold Brew Extremo</h3>
+                    <p>Cold brew con cafeína extra y 30g de proteína diseñado para atletas de élite.</p>
+                    <span class="price">$109.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida proteica en lata ESTEFIT frutos rojos post-entreno" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Recuperación de Frutos Rojos</h3>
+                    <p>Bebida proteica post-entreno con BCAAs y jugo real de frutos rojos.</p>
+                    <span class="price">$79.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida proteica ESTEFIT hidratación tropical ciclistas" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Hidratación Tropical</h3>
+                    <p>Mezcla de agua de coco y proteína optimizada para ciclistas y atletas de resistencia.</p>
+                    <span class="price">$89.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Bebida energética ESTEFIT cítrica naranja limón electrolitos" loading="lazy">
+                <div class="product-info">
+                    <h3>Proteína en Lata ESTEFIT - Energía Cítrica</h3>
+                    <p>Sabor cítrico de naranja y limón con 22g de proteína y electrolitos esenciales.</p>
+                    <span class="price">$89.00 MXN</span>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
+            
         </div>
     </section>
 
     <footer>
         <div class="footer-links">
-            <a href="{{footer.franchise_link}}">{{footer.franchise_text}}</a>
-            <a href="{{contact.website}}">{{footer.privacy_text}}</a>
-            <a href="{{contact.website}}">{{footer.terms_text}}</a>
+            <a href="franchise.html">Abre una Franquicia ESTEFIT</a>
+            <a href="https://estefit.store">Aviso de Privacidad</a>
+            <a href="https://estefit.store">Términos y Condiciones</a>
         </div>
         
         <div class="social-links">
-            <a href="{{social.facebook}}">{{social.facebook_name}}</a>
-            <a href="{{social.instagram}}">{{social.instagram_name}}</a>
-            <a href="{{social.twitter}}">{{social.twitter_name}}</a>
-            <a href="{{social.youtube}}">{{social.youtube_name}}</a>
+            <a href="https://facebook.com/estefit">Facebook</a>
+            <a href="https://instagram.com/estefit">Instagram</a>
+            <a href="https://twitter.com/estefit">Twitter</a>
+            <a href="https://youtube.com/estefit">YouTube</a>
         </div>
         
         <div class="contact-info">
-            <p>{{contact.email_label}} {{contact.email}} | {{contact.phone_label}} {{contact.phone}}</p>
-            <p>{{contact.website_label}} {{contact.website}}</p>
+            <p>Correo: info@estefit.com | Teléfono: +52-800-555-0199</p>
+            <p>Sitio Web: https://estefit.store</p>
         </div>
         
         <div class="copyright">
-            {{footer.copyright}}
+            © 2026 ESTEFIT Nutrición. Todos los derechos reservados.
         </div>
     </footer>
 </body>
