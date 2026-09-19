@@ -91,7 +91,9 @@ function processTemplate(template, config) {
         return array.map(item => {
             return blockContent.replace(/{{\s*([\w.]+)\s*}}/g, (placeholderMatch, key) => {
                 let value;
-                if (key.startsWith(itemName + '.')) {
+                if (key === itemName) {
+                    value = item;
+                } else if (key.startsWith(itemName + '.')) {
                     const itemKey = key.substring(itemName.length + 1);
                     value = resolvePath(item, itemKey);
                 } else {

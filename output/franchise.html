@@ -48,6 +48,13 @@
 
         .hero-small { position: relative; height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('https://leonfelipeelmaster-maker.github.io/estefit-website/images/hero-estefit.jpg') center/cover no-repeat; }
         .hero-small .hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay); }
+
+        .check-list { list-style: none; }
+        .check-list li { position: relative; padding: 0.5rem 0 0.5rem 1.8rem; border-bottom: 1px solid #eee; }
+        .check-list li:last-child { border-bottom: none; }
+        ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
+        ol.check-list { counter-reset: step; }
+        ol.check-list li::before { content: counter(step) "."; counter-increment: step; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
         .hero-small .hero-content { position: relative; z-index: 1; padding: 2rem; }
         .hero-small h1 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 0.5rem; }
         .hero-small p { font-size: 1.2rem; }
@@ -84,6 +91,57 @@
             .hero-small h1 { font-size: 2rem; }
             nav ul { gap: 1rem; font-size: 0.9rem; }
         }
+
+        .section-alt { background: #f9f9f9; }
+        .lead-text { text-align: center; font-size: 1.15rem; max-width: 800px; margin: 0 auto 2rem; color: #444; }
+
+        .steps-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .step-card { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+        .step-card strong { color: var(--secondary); }
+
+        .model-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .model-card { text-align: center; background: #fff; border-radius: 10px; padding: 2rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.3s; }
+        .model-card:hover { transform: translateY(-5px); }
+        .model-emoji { font-size: 2.5rem; margin-bottom: 0.8rem; }
+        .model-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary); }
+        .model-card p { font-size: 0.9rem; color: #666; }
+
+        .community-box { text-align: center; max-width: 800px; margin: 0 auto; }
+        .channel-pills { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .channel-pills span { background: var(--primary); color: var(--secondary); padding: 0.5rem 1.2rem; border-radius: 30px; font-weight: 600; font-size: 0.9rem; }
+        .community-note { font-style: italic; color: #666; margin-top: 1rem; }
+
+        .funnel-row { display: flex; justify-content: center; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-top: 2rem; }
+        .funnel-row span { background: var(--secondary); color: var(--primary); padding: 0.6rem 1.3rem; border-radius: 30px; font-weight: bold; }
+        .funnel-arrow { color: var(--secondary); font-size: 1.3rem; }
+
+        .roi-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .roi-card { background: #fff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .roi-card h3 { color: var(--primary); margin-bottom: 0.3rem; }
+        .roi-card .roi-sub { color: var(--secondary); font-weight: bold; margin-bottom: 1rem; }
+        .roi-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .roi-table th, .roi-table td { padding: 0.5rem; text-align: center; border-bottom: 1px solid #eee; }
+        .roi-table th { background: var(--primary); color: white; }
+        .roi-table tr:last-child { font-weight: bold; background: #f4f4f4; }
+        .roi-note { font-size: 0.85rem; color: #888; margin-top: 2rem; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        .growth-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+        .growth-step { text-align: center; }
+        .growth-num { font-size: 2rem; font-weight: bold; color: var(--secondary); display: block; }
+        .growth-step h4 { margin: 0.3rem 0; color: var(--primary); }
+        .growth-step p { font-size: 0.85rem; color: #666; }
+
+        .final-goal { text-align: center; background: var(--primary); color: white; padding: 4rem 5%; }
+        .final-goal h2 { color: var(--secondary); font-size: 2rem; margin-bottom: 1rem; }
+        .final-goal .pillars { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .final-goal .pillars span { border: 1px solid var(--secondary); color: var(--secondary); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem; }
+        .final-goal .tagline { color: #ccc; margin-top: 1rem; }
+        .final-goal .closing { font-size: 1.3rem; font-weight: bold; margin-top: 1.5rem; color: white; }
+
+        @media (max-width: 900px) {
+            .steps-row, .model-grid, .roi-cards { grid-template-columns: 1fr; }
+            .growth-row { grid-template-columns: repeat(2, 1fr); }
+        }
     </style>
 </head>
 <body>
@@ -106,6 +164,23 @@
     </header>
 
     <section class="section">
+        <p class="lead-text">Puedes integrarlo a un negocio que ya tienes —como un gimnasio, tienda o establecimiento— o comenzar desarrollando tu propio punto de venta y comunidad digital.</p>
+
+        <h2 class="section-title">¿Cómo Funciona?</h2>
+        <div class="steps-row">
+        
+            <div class="step-card"><strong>Tú desarrollas tu negocio y tu marca</strong></div>
+        
+            <div class="step-card"><strong>Estefit te proporciona productos, apoyo comercial y CRM</strong></div>
+        
+            <div class="step-card"><strong>Una plataforma para crecer con inventario desde $3,000 MXN</strong></div>
+        
+            <div class="step-card"><strong>Aumenta progresivamente conforme crezcan tus ventas</strong></div>
+        
+        </div>
+    </section>
+
+    <section class="section">
         <div class="investment-box">
             <h3>Inversión y ROI</h3>
             <p>Inversión inicial desde <span class="investment-amount">$3000</span> hasta <span class="investment-amount">$7000 MXN</span></p>
@@ -117,20 +192,254 @@
         <div class="info-grid-3">
             <div>
                 <h3 style="color: var(--secondary); margin-bottom: 1rem;">Beneficios del Modelo</h3>
-                [object Object]
+                <ul class="check-list">
+                
+                    <li>Inversión accesible para comenzar</li>
+                
+                    <li>Acceso a productos diferenciados de EE.UU. y Canadá</li>
+                
+                    <li>Incorporación progresiva de productos de exportación</li>
+                
+                    <li>Construcción de comunidad digital alrededor de tu marca</li>
+                
+                    <li>Apoyo digital en redes sociales e internet</li>
+                
+                    <li>Estrategias comerciales y apoyo en ventas</li>
+                
+                    <li>Crecimiento progresivo: aumenta inventario conforme crece tu negocio</li>
+                
+                    <li>Protección de inventario con opción de devolución</li>
+                
+                </ul>
             </div>
             <div>
                 <h3 style="color: var(--secondary); margin-bottom: 1rem;">Requisitos</h3>
-                [object Object]
+                <ul class="check-list">
+                
+                    <li>Visión clara de negocio y determinación</li>
+                
+                    <li>Interés en desarrollar comunidad digital</li>
+                
+                    <li>Disposición para trabajar con redes sociales</li>
+                
+                    <li>Capacidad de gestionar relaciones con clientes</li>
+                
+                    <li>Flexibilidad para adaptarse al modelo de crecimiento</li>
+                
+                </ul>
             </div>
             <div>
                 <h3 style="color: var(--secondary); margin-bottom: 1rem;">Proceso</h3>
-                [object Object]
+                <ol class="check-list">
+                
+                    <li>Contacto inicial y presentación del modelo</li>
+                
+                    <li>Revisión de tu perfil y visión de negocio</li>
+                
+                    <li>Presentación detallada del catálogo y términos</li>
+                
+                    <li>Decisión y firma del acuerdo de franquicia</li>
+                
+                    <li>Acceso a plataforma CRM y herramientas digitales</li>
+                
+                    <li>Inicio de operaciones con inventario inicial</li>
+                
+                </ol>
             </div>
         </div>
 
         <div class="center-cta">
             <a href="contact-form.html" class="cta-btn">Solicita Información</a>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Integra Estefit a tu Modelo Actual</h2>
+        <div class="model-grid">
+        
+            <div class="model-card">
+                <div class="model-emoji">🏋</div>
+                <h3>Gimnasio</h3>
+                <p>Convierte a tus usuarios en consumidores de productos adicionales.</p>
+            </div>
+        
+            <div class="model-card">
+                <div class="model-emoji">🏪</div>
+                <h3>Tienda</h3>
+                <p>Agrega productos diferenciados y genera una nueva fuente de ingresos.</p>
+            </div>
+        
+            <div class="model-card">
+                <div class="model-emoji">📍</div>
+                <h3>Punto de Venta</h3>
+                <p>Utiliza un espacio de exhibición para comercializar productos seleccionados.</p>
+            </div>
+        
+            <div class="model-card">
+                <div class="model-emoji">💻</div>
+                <h3>Negocio Digital</h3>
+                <p>Promociona productos directamente a tu comunidad.</p>
+            </div>
+        
+            <div class="model-card">
+                <div class="model-emoji">🏢</div>
+                <h3>Establecimiento</h3>
+                <p>Integra una nueva categoría de productos a tu negocio actual.</p>
+            </div>
+        
+            <div class="model-card">
+                <div class="model-emoji">🚀</div>
+                <h3>Nuevo Emprendimiento</h3>
+                <p>Comienza desarrollando tu marca y tu comunidad desde cero.</p>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Desarrolla tu Propia Comunidad</h2>
+        <div class="community-box">
+            <p>Tu comunidad estará formada por personas interesadas en nutrición, deporte, fitness, productos innovadores y un estilo de vida activo.</p>
+            <div class="channel-pills">
+            
+                <span>Instagram</span>
+            
+                <span>Facebook</span>
+            
+                <span>Página web</span>
+            
+                <span>WhatsApp</span>
+            
+                <span>Punto de venta</span>
+            
+            </div>
+            <p class="community-note">Tu comunidad se convierte en un canal permanente para generar clientes y ventas sin depender únicamente de visitas físicas.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Activaciones y Promoción</h2>
+        <p class="lead-text">Las activaciones forman parte de la estrategia comercial de Norte Conexión: acercar los productos directamente a consumidores en gimnasios, establecimientos y comunidades deportivas, permitiéndoles conocer y probar los productos.</p>
+        <div class="info-grid-3" style="grid-template-columns: 1fr;">
+            <ul class="check-list" style="max-width: 600px; margin: 0 auto;">
+            
+                <li>Dar a conocer nuevos productos</li>
+            
+                <li>Generar nuevos contactos</li>
+            
+                <li>Crear comunidad</li>
+            
+                <li>Incrementar seguidores</li>
+            
+                <li>Generar ventas</li>
+            
+                <li>Detectar nuevos clientes</li>
+            
+                <li>Promocionar diferentes productos</li>
+            
+            </ul>
+        </div>
+        <div class="funnel-row">
+        
+            <span>Probar</span>
+        
+            <span>Conocer</span>
+        
+            <span>Comprar</span>
+        
+            <span>Volver a comprar</span>
+        
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">¿No Tienes Redes Sociales ni Página Web?</h2>
+        <p class="lead-text"><strong>Puedes comenzar desde cero.</strong><br>Si todavía no tienes una comunidad digital, redes sociales desarrolladas o página de internet, Norte Conexión puede apoyarte a construirlas, si es de tu interés y conforme al alcance del programa contratado.</p>
+        <ul class="check-list" style="max-width: 600px; margin: 0 auto;">
+        
+            <li>Crear tu presencia en redes sociales</li>
+        
+            <li>Desarrollar contenido</li>
+        
+            <li>Promocionar tus productos</li>
+        
+            <li>Construir una comunidad</li>
+        
+            <li>Aumentar tu audiencia</li>
+        
+            <li>Generar contactos</li>
+        
+            <li>Dirigir clientes hacia tu establecimiento o canal de venta</li>
+        
+            <li>Desarrollar posteriormente tu página de internet</li>
+        
+        </ul>
+        <p class="community-note" style="text-align:center; margin-top: 1.5rem;">No necesitas tener una gran comunidad para comenzar. Lo importante es tener la visión y el interés de desarrollarla.</p>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Ejemplos de Recuperación de Inversión</h2>
+        <div class="roi-cards">
+            <div class="roi-card">
+                <h3>Inversión inicial: $3,000 MXN</h3>
+                <div class="roi-sub">Ganancia del 30%</div>
+                <table class="roi-table">
+                    <tr><th>Mes</th><th>Ventas objetivo</th><th>Ganancia</th><th>Recuperación acum.</th></tr>
+                    <tr><td>Mes 1</td><td>$2,500</td><td>$750</td><td>$750</td></tr>
+                    <tr><td>Mes 2</td><td>$3,000</td><td>$900</td><td>$1,650</td></tr>
+                    <tr><td>Mes 3</td><td>$4,500</td><td>$1,350</td><td>$3,000</td></tr>
+                    <tr><td>TOTAL</td><td>$10,000</td><td>$3,000</td><td>ROI: 100%</td></tr>
+                </table>
+            </div>
+            <div class="roi-card">
+                <h3>Inversión inicial: $7,000 MXN</h3>
+                <div class="roi-sub">Ganancia del 40%</div>
+                <table class="roi-table">
+                    <tr><th>Mes</th><th>Ventas objetivo</th><th>Ganancia</th><th>Recuperación acum.</th></tr>
+                    <tr><td>Mes 1</td><td>$4,000</td><td>$1,600</td><td>$1,600</td></tr>
+                    <tr><td>Mes 2</td><td>$5,500</td><td>$2,200</td><td>$3,800</td></tr>
+                    <tr><td>Mes 3</td><td>$8,000</td><td>$3,200</td><td>$7,000</td></tr>
+                    <tr><td>TOTAL</td><td>$17,500</td><td>$7,000</td><td>ROI: 100%</td></tr>
+                </table>
+            </div>
+        </div>
+        <p class="roi-note">Esta cifra representa una meta comercial y no una garantía de rendimiento. El tiempo real dependerá del volumen de ventas, actividad comercial, número de clientes, tamaño de comunidad, canal de venta y rotación de inventario.</p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">El Modelo de Crecimiento en 5 Pasos</h2>
+        <div class="growth-row">
+        
+            <div class="growth-step">
+                <span class="growth-num">01</span>
+                <h4>Comienza</h4>
+                <p>Desde $3,000 pesos.</p>
+            </div>
+        
+            <div class="growth-step">
+                <span class="growth-num">02</span>
+                <h4>Conecta</h4>
+                <p>Obtén productos diferenciados de Norte Conexión.</p>
+            </div>
+        
+            <div class="growth-step">
+                <span class="growth-num">03</span>
+                <h4>Construye</h4>
+                <p>Desarrolla tu marca y tu comunidad.</p>
+            </div>
+        
+            <div class="growth-step">
+                <span class="growth-num">04</span>
+                <h4>Vende</h4>
+                <p>Utiliza tu establecimiento, redes sociales, internet y otros canales.</p>
+            </div>
+        
+            <div class="growth-step">
+                <span class="growth-num">05</span>
+                <h4>Crece</h4>
+                <p>Aumenta progresivamente tus productos, clientes, comunidad y ventas.</p>
+            </div>
+        
         </div>
     </section>
 
@@ -145,9 +454,40 @@
         </div>
     </section>
 
+    <section class="final-goal">
+        <h2>El Objetivo Final</h2>
+        <p>El objetivo de Norte Conexión es crear una red de franquiciados, establecimientos, puntos de venta y comunidades digitales que puedan crecer de manera progresiva.</p>
+        <div class="pillars">
+        
+            <span>Tu Propia Marca</span>
+        
+            <span>Tu Propia Comunidad</span>
+        
+            <span>Tu Propio Canal de Ventas</span>
+        
+            <span>Tu Propio Negocio</span>
+        
+        </div>
+        <p class="tagline">Productos internacionales. Comunidades locales. Negocios que crecen.</p>
+        <p class="closing">Tú construyes la comunidad. Nosotros te ayudamos a hacerla crecer.</p>
+        <div class="center-cta" style="margin-top: 2rem;">
+            <a href="contact-form.html" class="cta-btn">Solicita Información</a>
+        </div>
+    </section>
+
     <footer>
         <p>© 2026 Estefit Wellness. Todos los derechos reservados.</p>
-        <div>[object Object],[object Object],[object Object],[object Object]</div>
+        <div>
+        
+            <a href="index.html">Inicio</a>
+        
+            <a href="index.html#productos">Productos</a>
+        
+            <a href="franchise.html">Franquicia</a>
+        
+            <a href="contact-form.html">Contacto</a>
+        
+        </div>
         <div class="social-links">
             <a href="https://instagram.com/este_fit92" target="_blank" rel="noopener">Instagram</a>
             <a href="https://tiktok.com/@estefit_92" target="_blank" rel="noopener">TikTok</a>

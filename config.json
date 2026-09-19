@@ -224,12 +224,36 @@
     "models": {
       "title": "Integra Estefit a tu Modelo Actual",
       "options": [
-        "Gimnasio: Convierte usuarios en consumidores de productos",
-        "Tienda: Agrega productos diferenciados y nueva fuente de ingresos",
-        "Punto de Venta: Exhibe y comercializa productos",
-        "Negocio Digital: Promueve directamente a tu comunidad",
-        "Establecimiento: Integra nueva categoría de productos",
-        "Nuevo Emprendimiento: Desarrolla tu marca desde cero"
+        {
+          "emoji": "🏋",
+          "title": "Gimnasio",
+          "description": "Convierte a tus usuarios en consumidores de productos adicionales."
+        },
+        {
+          "emoji": "🏪",
+          "title": "Tienda",
+          "description": "Agrega productos diferenciados y genera una nueva fuente de ingresos."
+        },
+        {
+          "emoji": "📍",
+          "title": "Punto de Venta",
+          "description": "Utiliza un espacio de exhibición para comercializar productos seleccionados."
+        },
+        {
+          "emoji": "💻",
+          "title": "Negocio Digital",
+          "description": "Promociona productos directamente a tu comunidad."
+        },
+        {
+          "emoji": "🏢",
+          "title": "Establecimiento",
+          "description": "Integra una nueva categoría de productos a tu negocio actual."
+        },
+        {
+          "emoji": "🚀",
+          "title": "Nuevo Emprendimiento",
+          "description": "Comienza desarrollando tu marca y tu comunidad desde cero."
+        }
       ]
     },
     "norte_conexion": {
@@ -239,7 +263,144 @@
     },
     "investment_min": 3000,
     "investment_max": 7000,
-    "roi_months": "3-6"
+    "roi_months": "3-6",
+    "activations": {
+      "title": "Activaciones y Promoción",
+      "description": "Las activaciones forman parte de la estrategia comercial de Norte Conexión: acercar los productos directamente a consumidores en gimnasios, establecimientos y comunidades deportivas, permitiéndoles conocer y probar los productos.",
+      "benefits": [
+        "Dar a conocer nuevos productos",
+        "Generar nuevos contactos",
+        "Crear comunidad",
+        "Incrementar seguidores",
+        "Generar ventas",
+        "Detectar nuevos clientes",
+        "Promocionar diferentes productos"
+      ],
+      "funnel": [
+        "Probar",
+        "Conocer",
+        "Comprar",
+        "Volver a comprar"
+      ]
+    },
+    "no_social_media": {
+      "title": "¿No Tienes Redes Sociales ni Página Web?",
+      "subtitle": "Puedes comenzar desde cero.",
+      "description": "Si todavía no tienes una comunidad digital, redes sociales desarrolladas o página de internet, Norte Conexión puede apoyarte a construirlas, si es de tu interés y conforme al alcance del programa contratado.",
+      "support_items": [
+        "Crear tu presencia en redes sociales",
+        "Desarrollar contenido",
+        "Promocionar tus productos",
+        "Construir una comunidad",
+        "Aumentar tu audiencia",
+        "Generar contactos",
+        "Dirigir clientes hacia tu establecimiento o canal de venta",
+        "Desarrollar posteriormente tu página de internet"
+      ],
+      "closing_note": "No necesitas tener una gran comunidad para comenzar. Lo importante es tener la visión y el interés de desarrollarla."
+    },
+    "roi_examples": {
+      "title": "Ejemplos de Recuperación de Inversión",
+      "note": "Esta cifra representa una meta comercial y no una garantía de rendimiento. El tiempo real dependerá del volumen de ventas, actividad comercial, número de clientes, tamaño de comunidad, canal de venta y rotación de inventario.",
+      "examples": [
+        {
+          "investment": 3000,
+          "profit_pct": 30,
+          "months": [
+            {
+              "label": "Mes 1",
+              "sales": 2500,
+              "profit": 750,
+              "accumulated": 750
+            },
+            {
+              "label": "Mes 2",
+              "sales": 3000,
+              "profit": 900,
+              "accumulated": 1650
+            },
+            {
+              "label": "Mes 3",
+              "sales": 4500,
+              "profit": 1350,
+              "accumulated": 3000
+            }
+          ],
+          "total_sales": 10000,
+          "total_profit": 3000,
+          "roi": "100%"
+        },
+        {
+          "investment": 7000,
+          "profit_pct": 40,
+          "months": [
+            {
+              "label": "Mes 1",
+              "sales": 4000,
+              "profit": 1600,
+              "accumulated": 1600
+            },
+            {
+              "label": "Mes 2",
+              "sales": 5500,
+              "profit": 2200,
+              "accumulated": 3800
+            },
+            {
+              "label": "Mes 3",
+              "sales": 8000,
+              "profit": 3200,
+              "accumulated": 7000
+            }
+          ],
+          "total_sales": 17500,
+          "total_profit": 7000,
+          "roi": "100%"
+        }
+      ]
+    },
+    "growth_steps": {
+      "title": "El Modelo de Crecimiento en 5 Pasos",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Comienza",
+          "description": "Desde $3,000 pesos."
+        },
+        {
+          "number": "02",
+          "title": "Conecta",
+          "description": "Obtén productos diferenciados de Norte Conexión."
+        },
+        {
+          "number": "03",
+          "title": "Construye",
+          "description": "Desarrolla tu marca y tu comunidad."
+        },
+        {
+          "number": "04",
+          "title": "Vende",
+          "description": "Utiliza tu establecimiento, redes sociales, internet y otros canales."
+        },
+        {
+          "number": "05",
+          "title": "Crece",
+          "description": "Aumenta progresivamente tus productos, clientes, comunidad y ventas."
+        }
+      ]
+    },
+    "final_goal": {
+      "title": "El Objetivo Final",
+      "description": "El objetivo de Norte Conexión es crear una red de franquiciados, establecimientos, puntos de venta y comunidades digitales que puedan crecer de manera progresiva.",
+      "pillars": [
+        "Tu Propia Marca",
+        "Tu Propia Comunidad",
+        "Tu Propio Canal de Ventas",
+        "Tu Propio Negocio"
+      ],
+      "tagline": "Productos internacionales. Comunidades locales. Negocios que crecen.",
+      "closing": "Tú construyes la comunidad. Nosotros te ayudamos a hacerla crecer."
+    }
   },
   "contact": {
     "email": "contacto@estefit.com",
@@ -314,7 +475,7 @@
     "id": 1,
     "name": "Power Crunch Protein Bars",
     "description": "Barras de proteína con textura de wafer crujiente. 12-14g de proteína, bajo en azúcar (4-8g). Whey protein hidrolizada de alto grado. Sabores: Cookies & Cream, Peanut Butter, Triple Chocolate, Vanilla, Strawberry, Red Velvet, Salted Caramel y más.",
-    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-1-power-crunch-protein-bars.jpg",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-1-power-crunch.jpg",
     "protein_g": "12-14g",
     "sugar_g": "4-8g",
     "price": "Consulta disponibilidad"
@@ -323,7 +484,7 @@
     "id": 2,
     "name": "Barebells Original",
     "description": "20g de proteína por barra. Sin azúcar añadida. Textura con capas, relleno y cobertura de chocolate. Mezcla de caseinato de calcio, whey isolate y whey concentrate. Sabores: Cookies & Cream, Chocolate Dough, Peanut Butter, Caramel, Birthday Cake, Mint Chocolate y más.",
-    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-2-barebells-original.jpg",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-2-barebells.jpg",
     "protein_g": "20g",
     "sugar_g": "0g",
     "price": "Consulta disponibilidad"
@@ -332,7 +493,7 @@
     "id": 3,
     "name": "CLIF BUILDERS Protein",
     "description": "Barra plant-based con 20g de proteína. Sin gluten, Non-GMO, sin endulzantes artificiales. Sabores: Chocolate, Chocolatey Peanut Butter, Vanilla Almond, Cookies N Creme, Chocolate Chip Cookie Dough y más.",
-    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-3-clif-builders-protein.jpg",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-3-clif-builders-chocolate.jpg",
     "protein_g": "20g",
     "sugar_g": "Bajo",
     "price": "Consulta disponibilidad"
@@ -368,7 +529,7 @@
     "id": 7,
     "name": "Gatorade Recovery Protein Bar",
     "description": "Diseñada para recuperación post-entrenamiento. 20g proteína + carbohidratos. Whey protein de alta calidad. Peso: 80g. Sabores: Peanut Butter Chocolate, Chocolate Chip, Chocolate Caramel, Cookies & Crème, Mint Chocolate Crunch.",
-    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-7-gatorade-recovery-protein-bar.jpg",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-7-gatorade-protein.jpg",
     "protein_g": "20g",
     "carbs_g": "Alto",
     "price": "Consulta disponibilidad"
@@ -377,7 +538,7 @@
     "id": 8,
     "name": "ONE REESE'S Peanut Butter",
     "description": "Colaboración con REESE'S. 18g proteína, 3g azúcar. 250 calorías. Sabor chocolate + crema de cacahuate. Sin gluten, Kosher. Peso: 60g.",
-    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-8-one-reese's-peanut-butter.jpg",
+    "image": "https://leonfelipeelmaster-maker.github.io/estefit-website/images/producto-8-one-reeses.jpg",
     "protein_g": "18g",
     "sugar_g": "3g",
     "price": "Consulta disponibilidad"
